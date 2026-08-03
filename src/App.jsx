@@ -5,6 +5,7 @@ import "./app1.css";
 import solinix from "./assets/solinix.png";
 import hrmsImg from "./assets/hrms.png";
 import pgImg from "./assets/pg.png";
+import pgmoveImg from "./assets/pgmove.png";
 import tenantImg from "./assets/pg.png";
 import stayzyImg from "./assets/stayzy.png";
 import sarathImg from './assets/sarath.png';
@@ -424,8 +425,8 @@ export default function SingleScrollPage() {
                                     Learn More →
                                 </a>
                             </div>
-                            <div class="product-mockup phone-mockup">
-                                <div class="mockup-screen"></div>
+                            <div className="product-card-image">
+                                <img src={stayzyImg} alt="Stayzzy.in Dashboard" className="product-card-img" />
                             </div>
                         </a>
 
@@ -455,8 +456,8 @@ export default function SingleScrollPage() {
                                     Learn More →
                                 </a>
                             </div>
-                            <div class="product-mockup tablet-mockup">
-                                <div class="mockup-screen"></div>
+                            <div className="product-card-image">
+                                <img src={pgmoveImg} alt="PGMove.in Platform" className="product-card-img" />
                             </div>
                         </a>
 
@@ -487,8 +488,8 @@ export default function SingleScrollPage() {
                                     Learn More →
                                 </a>
                             </div>
-                            <div class="product-mockup tablet1-mockup">
-                                <div class="mockup-screen"></div>
+                            <div className="product-card-image">
+                                <img src={hrmsImg} alt="HRMS Dashboard" className="product-card-img" />
                             </div>
                         </a>
                     </div>
@@ -963,7 +964,7 @@ export default function SingleScrollPage() {
                             </a>
                         </div>
                         <div className="product-showcase-image">
-                            <img src={pgImg} alt="PGMove.in Dashboard" />
+                            <img src={pgmoveImg} alt="PGMove.in Dashboard" />
                         </div>
                     </div>
                 </div>
