@@ -291,7 +291,7 @@ export default function SingleScrollPage() {
         setIsDarkMode(!isDarkMode);
     };
     return (
-        <div className={`solinx-single-scroll-page ${!isDarkMode ? "light-theme" : ""}`}>
+        <div>
             {/* INTEGRATED NAVBAR */}
             <header className="navbar">
                 <div className="logo">
