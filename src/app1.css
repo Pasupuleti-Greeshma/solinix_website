@@ -597,14 +597,13 @@ body {
 .hero-section {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     position: relative;
-    min-height: 550px;
+    min-height: 380px;
     display: flex;
     align-items: center;
     background-color: #ffffff;
     overflow: hidden;
-    padding: 40px 0;
+    padding: 10px 0;
 }
-
 /* 
   Creates the image background on the right 
   and applies a white gradient fade towards the left and bottom 
