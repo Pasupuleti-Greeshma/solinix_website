@@ -252,9 +252,7 @@ export default function SingleScrollPage() {
                     <a href="#contact">Contact</a>
                 </nav>
                 <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
-                    <button onClick={toggleTheme} className="theme-toggle-btn">
-                        {isDarkMode ? "☀️ Light" : "🌙 Dark"}
-                    </button>
+                 
                     <a href="#consultation" className="consult-btn">
                         Let's talk
                     </a>
