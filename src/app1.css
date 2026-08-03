@@ -114,7 +114,7 @@ body {
     background:
         url('./assets/logo.png') no-repeat center center/cover;
     background-size: cover;
-    height: 520px;
+    height: 400px;
 }
 
 .home-hero-content {
@@ -616,14 +616,14 @@ body {
     width: 75%;
     height: 100%;
     background-image:
-        linear-gradient(to right, #ffffff 0%, #ffffff 15%, rgba(255, 255, 255, 0) 70%),
-        linear-gradient(to top, #ffffff 0%, rgba(255, 255, 255, 0) 15%),
-        url('image_fd3e84.jpg');
+        linear-gradient(to right, #ffffff 0%, rgba(255,255,255,0.92) 18%, rgba(255,255,255,0) 55%),
+        linear-gradient(to top, #ffffff 0%, rgba(255,255,255,0) 15%),
+        url("image_fd3e84.jpg");
     background-size: cover;
-    background-position: center left;
+    background-position: center;
+    background-repeat: no-repeat;
     z-index: 1;
 }
-
 /* Content Container */
 .hero-content {
     position: relative;
@@ -1423,8 +1423,13 @@ body {
     border: 1px solid #f1f5f9;
     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
     border-radius: 20px;
-    padding: 30px 50px;
+    padding: 30px 20px;
     margin-bottom: 70px;
+    overflow: hidden;
+}
+
+.tech-stack-container {
+    overflow: hidden;
 }
 
 .tech-stack-title {
@@ -1437,12 +1442,21 @@ body {
     margin-bottom: 25px;
 }
 
+.tech-scroll-window {
+    width: 100%;
+    overflow: hidden;
+}
+
 .tech-items-row {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 15px;
-    overflow-x: auto;
+    gap: 40px;
+    width: max-content;
+    animation: techScroll 25s linear infinite;
+}
+
+.tech-items-row:hover {
+    animation-play-state: paused;
 }
 
 .tech-item {
@@ -1456,9 +1470,18 @@ body {
 .tech-icon-circle {
     width: 48px;
     height: 48px;
-    background-color: #f8fafc;
+    background: #f8fafc;
     border: 1px solid #e2e8f0;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tech-logo {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
 }
 
 .tech-name {
@@ -1467,31 +1490,14 @@ body {
     color: #1e293b;
 }
 
-.slider-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 36px;
-    height: 36px;
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    color: #523ee8;
-    font-weight: bold;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    z-index: 10;
-}
+@keyframes techScroll {
+    from {
+        transform: translateX(0);
+    }
 
-.left-arrow {
-    left: -18px;
-}
-
-.right-arrow {
-    right: -18px;
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 /* Process Section Headers */
@@ -1758,7 +1764,7 @@ body {
 
 .description {
     font-size: 1.05rem;
-    color: #64748b;
+    color: #000000;
     line-height: 1.6;
     margin: 0;
 }
@@ -2979,8 +2985,15 @@ body {
     background: #ffffff !important;
     opacity: 1 !important;
     filter: none !important;
+    padding: 30px 20px 50px;
+}
+.core-services-header {
+    margin-bottom: 20px;
 }
 
+.service-cards-container {
+    padding-top: 10px;
+}
 .core-services-header {
     align-items: center;
     justify-items: center;
@@ -3052,13 +3065,12 @@ section {
 }
 
 .core-services-section {
-    padding: 55px 20px !important;
+    padding: 40px 20px !important;
 }
 
 .tech-process-section {
-    padding: 55px 20px !important;
+    padding: 25px 20px !important;
 }
-
 .digital-solutions-section {
     padding: 55px 20px !important;
 }

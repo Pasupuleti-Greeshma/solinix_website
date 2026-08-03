@@ -135,25 +135,79 @@ export default function SingleScrollPage() {
         },
     ];
     const services = [
-        {
-            title: "UI/UX Design",
-            description: "Creative and intuitive designs that enhance engagement. User-centered, conversion-optimized and beautifully crafted.",
-            features: ["Wireframing", "Prototyping", "Design Systems", "User Research"],
-            technologies: ["Figma", "Wireframing", "Design Systems", "Prototyping"]
-        },
-        {
-            title: "Digital Marketing",
-            description: "Result-driven marketing strategies to grow your brand and reach. SEO, social media, paid campaigns and more.",
-            features: ["SEO & SEM", "Social Media", "Content Marketing", "Analytics"],
-            technologies: ["Google Analytics", "Google Ads", "SEO Suite", "Meta Ads"]
-        },
-        {
-            title: "Cloud & Maintenance",
-            description: "Secure hosting, cloud deployment and ongoing support to keep your software running at peak performance 24/7.",
-            features: ["AWS & Azure", "DevOps & CI/CD", "Performance Monitoring", "24/7 Support"],
-            technologies: ["AWS", "Docker", "Kubernetes", "Redis"]
-        }
-    ];
+  {
+    title: "Software Development",
+    description:
+      "Custom software solutions built for your unique business needs and goals.",
+    features: [
+      "Custom Applications",
+      "Enterprise Software",
+      "API Development",
+      "Maintenance",
+    ],
+    technologies: ["React", "Java", "Spring Boot", "MySQL"],
+  },
+  {
+    title: "Web & Mobile Apps",
+    description:
+      "Responsive web and mobile applications that deliver smooth user experiences.",
+    features: [
+      "Responsive Design",
+      "Android Apps",
+      "iOS Apps",
+      "Cross Platform",
+    ],
+    technologies: ["React", "React Native", "Flutter", "Firebase"],
+  },
+  {
+    title: "Business Automation",
+    description:
+      "Automate workflows and processes to improve efficiency and reduce costs.",
+    features: [
+      "Workflow Automation",
+      "CRM Solutions",
+      "ERP Integration",
+      "Reporting",
+    ],
+    technologies: ["Node.js", "Spring Boot", "PostgreSQL", "REST API"],
+  },
+  {
+    title: "Cloud & DevOps",
+    description:
+      "Scalable cloud solutions and DevOps practices for speed, security and reliability.",
+    features: [
+      "Cloud Deployment",
+      "CI/CD",
+      "Docker",
+      "Monitoring",
+    ],
+    technologies: ["AWS", "Docker", "Kubernetes", "Jenkins"],
+  },
+  {
+    title: "AI & Automation",
+    description:
+      "Leverage AI and automation to improve productivity and business growth.",
+    features: [
+      "AI Chatbots",
+      "Machine Learning",
+      "Automation",
+      "Analytics",
+    ],
+    technologies: ["Python", "OpenAI", "TensorFlow", "FastAPI"],
+  },
+  {
+    title: "Cybersecurity",
+    description:
+      "Protect your systems and data with modern security practices and monitoring.",
+    features: [
+      "Security Audit",
+      "Authentication",
+      "Encryption",
+      "Threat Monitoring",
+    ],
+    technologies: ["JWT", "OAuth", "SSL", "AWS Security"],
+  },
+];
 
     const blogs = [
         {
@@ -274,7 +328,7 @@ export default function SingleScrollPage() {
 
           
             </section>
-            <section class="digital-solutions-section">
+             <section className="digital-solutions-section"> 
                 <div class="container">
                     <div class="section-header">
                         <span class="sub-heading">What We Do</span>
@@ -656,9 +710,7 @@ export default function SingleScrollPage() {
                         </h1>
 
                         <p className="description">
-                            We build modern, scalable and reliable software solutions
-                            that help businesses automate, grow and stay ahead
-                            in a competitive world.
+                            We build modern, scalable and reliable software solutions...
                         </p>
 
                         <button className="cta-button">
@@ -726,28 +778,30 @@ export default function SingleScrollPage() {
                 <div className="container">
 
                     {/* Technology Stack Carousel Bar */}
-                    <div className="tech-stack-wrapper">
-                        <button className="slider-arrow left-arrow" aria-label="Previous">
-                            &larr;
-                        </button>
+              <div className="tech-stack-wrapper">
+    <div className="tech-stack-container">
+        <span className="tech-stack-title">
+            TECHNOLOGY STACK WE USE
+        </span>
 
-                        <div className="tech-stack-container">
-                            <span className="tech-stack-title">TECHNOLOGY STACK WE USE</span>
-                            <div className="tech-items-row">
-                                {techStack.map((tech, index) => (
-                                    <div className="tech-item" key={index}>
-                                        <div className="tech-icon-circle"><img src={tech.icon} alt={tech.name} className="tech-logo" /></div>
-                                        <span className="tech-name">{tech.name}</span>
-                                    </div>
-                                ))}
-                            </div>
+        <div className="tech-scroll-window">
+            <div className="tech-items-row">
+                {[...techStack, ...techStack].map((tech, index) => (
+                    <div className="tech-item" key={index}>
+                        <div className="tech-icon-circle">
+                            <img
+                                src={tech.icon}
+                                alt={tech.name}
+                                className="tech-logo"
+                            />
                         </div>
-
-                        <button className="slider-arrow right-arrow" aria-label="Next">
-                            &rarr;
-                        </button>
+                        <span className="tech-name">{tech.name}</span>
                     </div>
-
+                ))}
+            </div>
+        </div>
+    </div>
+</div>
                     {/* Process Section */}
                     <div className="process-header">
                         <span className="sub-heading">OUR PROCESS</span>
