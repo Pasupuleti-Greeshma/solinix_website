@@ -34,7 +34,6 @@ body {
     color: rgb(138, 92, 255);
 }
 
-
 /* ==========================================
    1. HERO SECTION
    ========================================== */
@@ -4443,7 +4442,7 @@ section {
 }
 
 .products-section {
-    padding: 0px 20px 55px 20px !important;
+    padding: 55px 20px !important;
 }
 
 /* Headers */

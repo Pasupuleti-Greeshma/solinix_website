@@ -5,7 +5,6 @@ import "./app1.css";
 import solinix from "./assets/solinix.png";
 import hrmsImg from "./assets/hrms.png";
 import pgImg from "./assets/pg.png";
-import pgmoveImg from "./assets/pgmove.png";
 import tenantImg from "./assets/pg.png";
 import stayzyImg from "./assets/stayzy.png";
 import sarathImg from './assets/sarath.png';
@@ -301,7 +300,7 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
                     <a href="#about">About Us</a>
                     <a href="#services">Services</a>
                     <a href="#products">Products</a>
-                    <a href="#blog">Blog</a>
+                    <a href="#roadmap">Blog</a>
                     <a href="#contact">Contact</a>
                 </nav>
                 <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
@@ -421,8 +420,8 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
                                     Learn More →
                                 </a>
                             </div>
-                            <div className="product-card-image">
-                                <img src={stayzyImg} alt="Stayzzy.in Dashboard" className="product-card-img" />
+                            <div class="product-mockup phone-mockup">
+                                <div class="mockup-screen"></div>
                             </div>
                         </a>
 
@@ -452,8 +451,8 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
                                     Learn More →
                                 </a>
                             </div>
-                            <div className="product-card-image">
-                                <img src={pgmoveImg} alt="PGMove.in Platform" className="product-card-img" />
+                            <div class="product-mockup tablet-mockup">
+                                <div class="mockup-screen"></div>
                             </div>
                         </a>
 
@@ -484,8 +483,8 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
                                     Learn More →
                                 </a>
                             </div>
-                            <div className="product-card-image">
-                                <img src={hrmsImg} alt="HRMS Dashboard" className="product-card-img" />
+                            <div class="product-mockup tablet1-mockup">
+                                <div class="mockup-screen"></div>
                             </div>
                         </a>
                     </div>
@@ -960,7 +959,7 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
                             </a>
                         </div>
                         <div className="product-showcase-image">
-                            <img src={pgmoveImg} alt="PGMove.in Dashboard" />
+                            <img src={pgImg} alt="PGMove.in Dashboard" />
                         </div>
                     </div>
                 </div>
@@ -1047,16 +1046,22 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
                                     Reports &amp; Analytics
                                 </div>
                             </div>
-                            <button 
-                                className="product-showcase-cta" 
-                                onClick={() => alert("HRMS is currently under development and coming soon!")}
-                                style={{ cursor: 'pointer' }}
-                            >
+                            <button className="product-showcase-cta" style={{ cursor: 'default', opacity: 0.9 }}>
                                 Learn More <span className="cta-arrow">→</span>
                             </button>
                         </div>
-                        <div className="product-showcase-image">
-                            <img src={hrmsImg} alt="HRMS Dashboard" />
+                        <div className="product-showcase-image hrms-coming-soon">
+                            <div className="coming-soon-card">
+                                <div className="coming-soon-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                        <path d="M2 17l10 5 10-5" />
+                                        <path d="M2 12l10 5 10-5" />
+                                    </svg>
+                                </div>
+                                <h3>Launching Soon</h3>
+                                <p>Our enterprise Human Resource Management System is currently in active development. We are engineering a unified corporate dashboard to simplify directory rosters, recruitment funnels, and automated payroll operations.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1130,52 +1135,6 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
                 </div>
             </section>
-
-            {/* BLOG SECTION */}
-            <section className="blog-section" id="blog">
-                <div className="blog-container">
-
-                    {/* Section Header */}
-                    <div className="blog-header">
-                        <span className="sub-heading">LATEST INSIGHTS</span>
-                        <h2 className="main-heading">
-                            Technology Insights &amp; <span className="highlight">Blogs</span>
-                        </h2>
-                        <p className="description">
-                            Stay updated with the latest trends in software engineering, frontend frameworks, backend architecture, AI, and digital transformation.
-                        </p>
-                    </div>
-
-                    {/* Blog Cards Grid */}
-                    <div className="blog-grid">
-                        {blogs.map((blog, index) => (
-                            <article className="blog-card" key={index}>
-                                <div className="blog-card-image-wrapper">
-                                    <img src={blog.image} alt={blog.title} className="blog-card-image" />
-                                    <span className="blog-category-badge">{blog.category}</span>
-                                </div>
-                                <div className="blog-card-body">
-                                    <div className="blog-meta-info">
-                                        <span className="blog-date">{blog.date}</span>
-                                        <span className="meta-separator">•</span>
-                                        <span className="blog-read-time">{blog.read}</span>
-                                    </div>
-                                    <h3 className="blog-card-title">{blog.title}</h3>
-                                    <p className="blog-card-excerpt">{blog.description}</p>
-                                    <button 
-                                        className="blog-read-btn" 
-                                        onClick={() => alert("Coming Soon! This article will be published shortly.")}
-                                    >
-                                        Read Article <span className="arrow-icon">&rarr;</span>
-                                    </button>
-                                </div>
-                            </article>
-                        ))}
-                    </div>
-
-                </div>
-            </section>
-
             <section className="contact-section" id="contact">
                 {/* Background Image Layer with Fade */}
                 <div className="contact-bg-layer"></div>
