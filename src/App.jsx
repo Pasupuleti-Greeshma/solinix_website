@@ -540,7 +540,7 @@ export default function SingleScrollPage() {
 
                 </div>
             </section>
-            <section className="hero-section">
+            <section className="hero-section" id="about">
                 {/* Background image container with gradient fades */}
                 <div className="hero-background"></div>
 
@@ -817,7 +817,7 @@ export default function SingleScrollPage() {
 
                 </div>
             </section>
-            <section className="tech-process-section">
+            <section className="tech-process-section" id="roadmap">
                 <div className="container">
 
                     {/* Technology Stack Carousel Bar */}
