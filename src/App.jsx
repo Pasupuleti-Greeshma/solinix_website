@@ -303,6 +303,7 @@ export default function SingleScrollPage() {
                     <a href="#about">About Us</a>
                     <a href="#services">Services</a>
                     <a href="#products">Products</a>
+                    <a href="#blog">Blog</a>
                     <a href="#roadmap">Process</a>
                     <a href="#contact">Contact</a>
                 </nav>
@@ -1049,22 +1050,16 @@ export default function SingleScrollPage() {
                                     Reports &amp; Analytics
                                 </div>
                             </div>
-                            <button className="product-showcase-cta" style={{ cursor: 'default', opacity: 0.9 }}>
+                            <button 
+                                className="product-showcase-cta" 
+                                onClick={() => alert("HRMS is currently under development and coming soon!")}
+                                style={{ cursor: 'pointer' }}
+                            >
                                 Learn More <span className="cta-arrow">→</span>
                             </button>
                         </div>
-                        <div className="product-showcase-image hrms-coming-soon">
-                            <div className="coming-soon-card">
-                                <div className="coming-soon-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                                        <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                                        <path d="M2 17l10 5 10-5" />
-                                        <path d="M2 12l10 5 10-5" />
-                                    </svg>
-                                </div>
-                                <h3>Launching Soon</h3>
-                                <p>Our enterprise Human Resource Management System is currently in active development. We are engineering a unified corporate dashboard to simplify directory rosters, recruitment funnels, and automated payroll operations.</p>
-                            </div>
+                        <div className="product-showcase-image">
+                            <img src={hrmsImg} alt="HRMS Dashboard" />
                         </div>
                     </div>
                 </div>
@@ -1138,6 +1133,52 @@ export default function SingleScrollPage() {
 
                 </div>
             </section>
+
+            {/* BLOG SECTION */}
+            <section className="blog-section" id="blog">
+                <div className="blog-container">
+
+                    {/* Section Header */}
+                    <div className="blog-header">
+                        <span className="sub-heading">LATEST INSIGHTS</span>
+                        <h2 className="main-heading">
+                            Technology Insights &amp; <span className="highlight">Blogs</span>
+                        </h2>
+                        <p className="description">
+                            Stay updated with the latest trends in software engineering, frontend frameworks, backend architecture, AI, and digital transformation.
+                        </p>
+                    </div>
+
+                    {/* Blog Cards Grid */}
+                    <div className="blog-grid">
+                        {blogs.map((blog, index) => (
+                            <article className="blog-card" key={index}>
+                                <div className="blog-card-image-wrapper">
+                                    <img src={blog.image} alt={blog.title} className="blog-card-image" />
+                                    <span className="blog-category-badge">{blog.category}</span>
+                                </div>
+                                <div className="blog-card-body">
+                                    <div className="blog-meta-info">
+                                        <span className="blog-date">{blog.date}</span>
+                                        <span className="meta-separator">•</span>
+                                        <span className="blog-read-time">{blog.read}</span>
+                                    </div>
+                                    <h3 className="blog-card-title">{blog.title}</h3>
+                                    <p className="blog-card-excerpt">{blog.description}</p>
+                                    <button 
+                                        className="blog-read-btn" 
+                                        onClick={() => alert("Coming Soon! This article will be published shortly.")}
+                                    >
+                                        Read Article <span className="arrow-icon">&rarr;</span>
+                                    </button>
+                                </div>
+                            </article>
+                        ))}
+                    </div>
+
+                </div>
+            </section>
+
             <section className="contact-section" id="contact">
                 {/* Background Image Layer with Fade */}
                 <div className="contact-bg-layer"></div>
