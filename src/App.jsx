@@ -265,52 +265,14 @@ export default function SingleScrollPage() {
                     <span className="hero-tag">BUILDING DIGITAL SOLUTIONS THAT MATTER</span>
                     <h1>We build software <br />that drives real <br /><span className="highlight">business growth</span></h1>
                     <p>Solinix helps startups and enterprises transform ideas into <br />powerful digital products with modern technologies and user-first approach.</p>
-                    <div className="hero-buttons">
+                    <div className="hero-buttons" >
                         <a href="#services" className="primary-btn">Explore Our Services →</a>
                         <a href="#products" className="secondary-btn">View Our Work →</a>
                     </div>
-                    {/* <div className="trusted-by">
-                        <span className="trusted-title">TRUSTED BY GROWING BUSINESSES</span>
-                        <div className="logos-row">
-                            <span>✦ Vertex</span>
-                            <span>✦ innova</span>
-                            <span>✦ CloudPeak</span>
-                            <span>✦ Brightline</span>
-                            <span>✦ HexaLab</span>
-                        </div>
-                    </div> */}
+                   
                 </div>
 
-                {/* <div className="stats-bar">
-                    <div className="stat-item">
-                        <div className="stat-icon">🏆</div>
-                        <div>
-                            <h3>50+</h3>
-                            <p>Projects Delivered</p>
-                        </div>
-                    </div>
-                    <div className="stat-item">
-                        <div className="stat-icon">🏆</div>
-                        <div>
-                            <h3>30+</h3>
-                            <p>Happy Clients</p>
-                        </div>
-                    </div>
-                    <div className="stat-item">
-                        <div className="stat-icon">🏆</div>
-                        <div>
-                            <h3>98%</h3>
-                            <p>Client Satisfaction</p>
-                        </div>
-                    </div>
-                    <div className="stat-item">
-                        <div className="stat-icon">🏆</div>
-                        <div>
-                            <h3>5+</h3>
-                            <p>Industries Served</p>
-                        </div>
-                    </div>
-                </div> */}
+          
             </section>
             <section class="digital-solutions-section">
                 <div class="container">
@@ -510,13 +472,7 @@ export default function SingleScrollPage() {
                     </div>
                 </div>
 
-                {/* Right side floating text
-                <div className="hero-right-text">
-                    <span>Code.</span>
-                    <span>Build.</span>
-                    <span>Solve.</span>
-                    <span>Repeat.</span>
-                </div> */}
+              
             </section>
 
             <section className="our-story-section">
@@ -684,7 +640,7 @@ export default function SingleScrollPage() {
 
                 </div>
             </section>
-            <section className="hero-section">
+            <section className="hero-section" id="services">
                 {/* Background Image Layer with Gradient Fade */}
                 <div className="hero-background"></div>
 
@@ -842,7 +798,7 @@ export default function SingleScrollPage() {
                 </div>
             </section>
 
-            <section className="smart-products-section">
+            <section className="smart-products-section" id="products">
                 <div className="smart-products-container">
 
                     {/* Left Content Area */}
