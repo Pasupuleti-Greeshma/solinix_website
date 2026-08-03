@@ -330,6 +330,7 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: #faf9ff;
     padding: 60px 20px;
+    
     color: #111827;
 }
 
@@ -445,20 +446,39 @@ body {
     overflow: hidden;
     height: 200px;
     position: relative;
-    background: #f0f0f5;
 }
 
-.product-card-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top center;
-    border-radius: 12px;
-    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+.product-mockup {
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
 .product-card:hover .product-card-img {
     transform: scale(1.05);
+}
+
+.phone-mockup {
+    background-image: url('./assets/stayzy.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.tablet-mockup {
+    background-image: url('./assets/pgmove.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.tablet1-mockup {
+    background-image: url('./assets/hrms.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 /* Features Bar */
@@ -3212,7 +3232,7 @@ section {
 }
 
 .products-section {
-    padding: 0px 20px !important;
+    padding: 0px 20px 55px 20px !important;
 }
 
 /* Headers */

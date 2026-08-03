@@ -286,12 +286,9 @@ export default function SingleScrollPage() {
             icon: "fa-solid fa-rocket"
         }
     ];
-    const [isDarkMode, setIsDarkMode] = useState(false);
+   
     
-
-    const toggleTheme = () => {
-        setIsDarkMode(!isDarkMode);
-    };
+const [mobileMenuOpen, setMobileMenuOpen] = useState(false);   
     return (
         <div>
             {/* INTEGRATED NAVBAR */}
@@ -305,7 +302,6 @@ export default function SingleScrollPage() {
                     <a href="#services">Services</a>
                     <a href="#products">Products</a>
                     <a href="#blog">Blog</a>
-                    <a href="#roadmap">Process</a>
                     <a href="#contact">Contact</a>
                 </nav>
                 <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
@@ -331,7 +327,7 @@ export default function SingleScrollPage() {
 
 
             </section>
-            <section className="digital-solutions-section">
+            <section className="digital-solutions-section" >
                 <div class="container">
                     <div class="section-header">
                         <span class="sub-heading">What We Do</span>
