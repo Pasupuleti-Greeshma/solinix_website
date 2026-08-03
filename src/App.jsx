@@ -286,6 +286,7 @@ export default function SingleScrollPage() {
         }
     ];
     const [isDarkMode, setIsDarkMode] = useState(false);
+    
 
     const toggleTheme = () => {
         setIsDarkMode(!isDarkMode);
