@@ -135,79 +135,79 @@ export default function SingleScrollPage() {
         },
     ];
     const services = [
-  {
-    title: "Software Development",
-    description:
-      "Custom software solutions built for your unique business needs and goals.",
-    features: [
-      "Custom Applications",
-      "Enterprise Software",
-      "API Development",
-      "Maintenance",
-    ],
-    technologies: ["React", "Java", "Spring Boot", "MySQL"],
-  },
-  {
-    title: "Web & Mobile Apps",
-    description:
-      "Responsive web and mobile applications that deliver smooth user experiences.",
-    features: [
-      "Responsive Design",
-      "Android Apps",
-      "iOS Apps",
-      "Cross Platform",
-    ],
-    technologies: ["React", "React Native", "Flutter", "Firebase"],
-  },
-  {
-    title: "Business Automation",
-    description:
-      "Automate workflows and processes to improve efficiency and reduce costs.",
-    features: [
-      "Workflow Automation",
-      "CRM Solutions",
-      "ERP Integration",
-      "Reporting",
-    ],
-    technologies: ["Node.js", "Spring Boot", "PostgreSQL", "REST API"],
-  },
-  {
-    title: "Cloud & DevOps",
-    description:
-      "Scalable cloud solutions and DevOps practices for speed, security and reliability.",
-    features: [
-      "Cloud Deployment",
-      "CI/CD",
-      "Docker",
-      "Monitoring",
-    ],
-    technologies: ["AWS", "Docker", "Kubernetes", "Jenkins"],
-  },
-  {
-    title: "AI & Automation",
-    description:
-      "Leverage AI and automation to improve productivity and business growth.",
-    features: [
-      "AI Chatbots",
-      "Machine Learning",
-      "Automation",
-      "Analytics",
-    ],
-    technologies: ["Python", "OpenAI", "TensorFlow", "FastAPI"],
-  },
-  {
-    title: "Cybersecurity",
-    description:
-      "Protect your systems and data with modern security practices and monitoring.",
-    features: [
-      "Security Audit",
-      "Authentication",
-      "Encryption",
-      "Threat Monitoring",
-    ],
-    technologies: ["JWT", "OAuth", "SSL", "AWS Security"],
-  },
-];
+        {
+            title: "Software Development",
+            description:
+                "Custom software solutions built for your unique business needs and goals.",
+            features: [
+                "Custom Applications",
+                "Enterprise Software",
+                "API Development",
+                "Maintenance",
+            ],
+            technologies: ["React", "Java", "Spring Boot", "MySQL"],
+        },
+        {
+            title: "Web & Mobile Apps",
+            description:
+                "Responsive web and mobile applications that deliver smooth user experiences.",
+            features: [
+                "Responsive Design",
+                "Android Apps",
+                "iOS Apps",
+                "Cross Platform",
+            ],
+            technologies: ["React", "React Native", "Flutter", "Firebase"],
+        },
+        {
+            title: "Business Automation",
+            description:
+                "Automate workflows and processes to improve efficiency and reduce costs.",
+            features: [
+                "Workflow Automation",
+                "CRM Solutions",
+                "ERP Integration",
+                "Reporting",
+            ],
+            technologies: ["Node.js", "Spring Boot", "PostgreSQL", "REST API"],
+        },
+        {
+            title: "Cloud & DevOps",
+            description:
+                "Scalable cloud solutions and DevOps practices for speed, security and reliability.",
+            features: [
+                "Cloud Deployment",
+                "CI/CD",
+                "Docker",
+                "Monitoring",
+            ],
+            technologies: ["AWS", "Docker", "Kubernetes", "Jenkins"],
+        },
+        {
+            title: "AI & Automation",
+            description:
+                "Leverage AI and automation to improve productivity and business growth.",
+            features: [
+                "AI Chatbots",
+                "Machine Learning",
+                "Automation",
+                "Analytics",
+            ],
+            technologies: ["Python", "OpenAI", "TensorFlow", "FastAPI"],
+        },
+        {
+            title: "Cybersecurity",
+            description:
+                "Protect your systems and data with modern security practices and monitoring.",
+            features: [
+                "Security Audit",
+                "Authentication",
+                "Encryption",
+                "Threat Monitoring",
+            ],
+            technologies: ["JWT", "OAuth", "SSL", "AWS Security"],
+        },
+    ];
 
     const blogs = [
         {
@@ -306,7 +306,7 @@ export default function SingleScrollPage() {
                     <a href="#contact">Contact</a>
                 </nav>
                 <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
-                 
+
                     <a href="#contact" className="consult-btn">
                         Let's talk
                     </a>
@@ -323,12 +323,12 @@ export default function SingleScrollPage() {
                         <a href="#services" className="primary-btn">Explore Our Services →</a>
                         <a href="#products" className="secondary-btn">View Our Work →</a>
                     </div>
-                   
+
                 </div>
 
-          
+
             </section>
-             <section className="digital-solutions-section"> 
+            <section className="digital-solutions-section">
                 <div class="container">
                     <div class="section-header">
                         <span class="sub-heading">What We Do</span>
@@ -393,7 +393,13 @@ export default function SingleScrollPage() {
 
                     <div class="products-grid">
 
-                        <div class="product-card">
+                        <a
+                            href="https://stayzzy.in"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="product-card"
+                            style={{ textDecoration: "none", color: "inherit" }}
+                        >
                             <div class="product-info">
                                 <div className="product-title-area">
                                     <div className="product-icon stayzzy-icon">
@@ -406,15 +412,29 @@ export default function SingleScrollPage() {
                                     <h3>Stayzzy</h3>
                                 </div>
                                 <p>Complete PG management app for owners and tenants.</p>
-                                <a href="#" class="learn-more">Learn More &rarr;</a>
+                                <a
+                                    href="https://stayzzy.in"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="learn-more"
+                                    onClick={(e) => e.stopPropagation()}
+                                >
+                                    Learn More →
+                                </a>
                             </div>
                             <div class="product-mockup phone-mockup">
                                 <div class="mockup-screen"></div>
                             </div>
-                        </div>
+                        </a>
 
 
-                        <div class="product-card">
+                        <a
+                            href="https://pgmove.in"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="product-card"
+                            style={{ textDecoration: "none", color: "inherit" }}
+                        >
                             <div class="product-info">
                                 <div class="product-title-area">
                                     <div class="product-icon pgmove-icon">
@@ -423,15 +443,28 @@ export default function SingleScrollPage() {
                                     <h3>PGMove</h3>
                                 </div>
                                 <p>Marketplace to discover and book PGs and flats easily.</p>
-                                <a href="#" class="learn-more">Learn More &rarr;</a>
+                                <a
+                                    href="https://pgmove.in"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="learn-more"
+                                    onClick={(e) => e.stopPropagation()}
+                                >
+                                    Learn More →
+                                </a>
                             </div>
                             <div class="product-mockup tablet-mockup">
                                 <div class="mockup-screen"></div>
                             </div>
-                        </div>
+                        </a>
 
 
-                        <div class="product-card">
+                        <a
+                            href="#"
+                            onClick={() => alert("HRMS is Coming Soon")}
+                            className="product-card"
+                            style={{ textDecoration: "none", color: "inherit" }}
+                        >
                             <div class="product-info">
                                 <div class="product-title-area">
                                     <div class="product-icon hrms-icon">
@@ -440,12 +473,22 @@ export default function SingleScrollPage() {
                                     <h3>HRMS</h3>
                                 </div>
                                 <p>Smart HRMS to manage employees, payroll and operations.</p>
-                                <a href="#" class="learn-more">Learn More &rarr;</a>
+                                <a
+                                    href="#"
+                                    className="learn-more"
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        e.stopPropagation();
+                                        alert("HRMS is Coming Soon!");
+                                    }}
+                                >
+                                    Learn More →
+                                </a>
                             </div>
                             <div class="product-mockup tablet1-mockup">
                                 <div class="mockup-screen"></div>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
 
@@ -526,7 +569,7 @@ export default function SingleScrollPage() {
                     </div>
                 </div>
 
-              
+
             </section>
 
             <section className="our-story-section">
@@ -778,30 +821,30 @@ export default function SingleScrollPage() {
                 <div className="container">
 
                     {/* Technology Stack Carousel Bar */}
-              <div className="tech-stack-wrapper">
-    <div className="tech-stack-container">
-        <span className="tech-stack-title">
-            TECHNOLOGY STACK WE USE
-        </span>
+                    <div className="tech-stack-wrapper">
+                        <div className="tech-stack-container">
+                            <span className="tech-stack-title">
+                                TECHNOLOGY STACK WE USE
+                            </span>
 
-        <div className="tech-scroll-window">
-            <div className="tech-items-row">
-                {[...techStack, ...techStack].map((tech, index) => (
-                    <div className="tech-item" key={index}>
-                        <div className="tech-icon-circle">
-                            <img
-                                src={tech.icon}
-                                alt={tech.name}
-                                className="tech-logo"
-                            />
+                            <div className="tech-scroll-window">
+                                <div className="tech-items-row">
+                                    {[...techStack, ...techStack].map((tech, index) => (
+                                        <div className="tech-item" key={index}>
+                                            <div className="tech-icon-circle">
+                                                <img
+                                                    src={tech.icon}
+                                                    alt={tech.name}
+                                                    className="tech-logo"
+                                                />
+                                            </div>
+                                            <span className="tech-name">{tech.name}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
-                        <span className="tech-name">{tech.name}</span>
                     </div>
-                ))}
-            </div>
-        </div>
-    </div>
-</div>
                     {/* Process Section */}
                     <div className="process-header">
                         <span className="sub-heading">OUR PROCESS</span>
@@ -879,151 +922,151 @@ export default function SingleScrollPage() {
             </section>
             <section className="products-showcase-section" id="products">
 
-                    {/* Product 1: PGMove.in — Text Left, Image Right */}
-                    <div className="product-showcase-item">
-                        <div className="product-showcase-inner">
-                            <div className="product-showcase-text">
-                                <span className="product-status-badge live-badge">
-                                    <span className="status-dot live-dot"></span> LIVE
-                                </span>
-                                <h2 className="product-showcase-title">PGMove.in</h2>
-                                <p className="product-showcase-tagline">SMART PG &amp; RENTAL MANAGEMENT PLATFORM</p>
-                                <p className="product-showcase-desc">
-                                    A smart platform that connects people with PGs, hostels, and rental accommodations — while helping property owners manage listings and receive quality leads.
-                                </p>
-                                <div className="product-features-grid">
-                                    <div className="product-feature-item">
-                                        <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
-                                        Smart Property Search
-                                    </div>
-                                    <div className="product-feature-item">
-                                        <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
-                                        Property Listings
-                                    </div>
-                                    <div className="product-feature-item">
-                                        <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
-                                        Lead Management
-                                    </div>
-                                    <div className="product-feature-item">
-                                        <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
-                                        Owner Dashboard
-                                    </div>
-                                    <div className="product-feature-item">
-                                        <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
-                                        Rental Discovery
-                                    </div>
+                {/* Product 1: PGMove.in — Text Left, Image Right */}
+                <div className="product-showcase-item">
+                    <div className="product-showcase-inner">
+                        <div className="product-showcase-text">
+                            <span className="product-status-badge live-badge">
+                                <span className="status-dot live-dot"></span> LIVE
+                            </span>
+                            <h2 className="product-showcase-title">PGMove.in</h2>
+                            <p className="product-showcase-tagline">SMART PG &amp; RENTAL MANAGEMENT PLATFORM</p>
+                            <p className="product-showcase-desc">
+                                A smart platform that connects people with PGs, hostels, and rental accommodations — while helping property owners manage listings and receive quality leads.
+                            </p>
+                            <div className="product-features-grid">
+                                <div className="product-feature-item">
+                                    <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="M9 12l2 2 4-4" /></svg>
+                                    Smart Property Search
                                 </div>
-                                <a href="https://pgmove.in" target="_blank" rel="noopener noreferrer" className="product-showcase-cta">
-                                    Visit PGMove.in <span className="cta-arrow">→</span>
-                                </a>
+                                <div className="product-feature-item">
+                                    <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="M9 12l2 2 4-4" /></svg>
+                                    Property Listings
+                                </div>
+                                <div className="product-feature-item">
+                                    <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="M9 12l2 2 4-4" /></svg>
+                                    Lead Management
+                                </div>
+                                <div className="product-feature-item">
+                                    <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="M9 12l2 2 4-4" /></svg>
+                                    Owner Dashboard
+                                </div>
+                                <div className="product-feature-item">
+                                    <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="M9 12l2 2 4-4" /></svg>
+                                    Rental Discovery
+                                </div>
                             </div>
-                            <div className="product-showcase-image">
-                                <img src={pgImg} alt="PGMove.in Dashboard" />
-                            </div>
+                            <a href="https://pgmove.in" target="_blank" rel="noopener noreferrer" className="product-showcase-cta">
+                                Visit PGMove.in <span className="cta-arrow">→</span>
+                            </a>
+                        </div>
+                        <div className="product-showcase-image">
+                            <img src={pgImg} alt="PGMove.in Dashboard" />
                         </div>
                     </div>
+                </div>
 
-                    {/* Product 2: Stayzy.in — Image Left, Text Right (Reversed) */}
-                    <div className="product-showcase-item reversed">
-                        <div className="product-showcase-inner">
-                            <div className="product-showcase-image">
-                                <img src={stayzyImg} alt="Stayzy.in Dashboard" />
-                            </div>
-                            <div className="product-showcase-text">
-                                <span className="product-status-badge live-badge">
-                                    <span className="status-dot live-dot"></span> LIVE
-                                </span>
-                                <h2 className="product-showcase-title">Stayzzy.in</h2>
-                                <p className="product-showcase-tagline">ADVANCED CO-LIVING MANAGEMENT SYSTEM</p>
-                                <p className="product-showcase-desc">
-                                    A complete PG and hostel management platform built for property owners and tenants to handle rent, occupancy, and agreements.
-                                </p>
-                                <div className="product-features-grid">
-                                    <div className="product-feature-item">
-                                        <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
-                                        Tenant Management
-                                    </div>
-                                    <div className="product-feature-item">
-                                        <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
-                                        Rent Collection
-                                    </div>
-                                    <div className="product-feature-item">
-                                        <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
-                                        Digital Rental Agreements
-                                    </div>
-                                    <div className="product-feature-item">
-                                        <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
-                                        Occupancy Management
-                                    </div>
-                                    <div className="product-feature-item">
-                                        <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
-                                        Maintenance Requests
-                                    </div>
-                                    <div className="product-feature-item">
-                                        <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
-                                        Mobile Application
-                                    </div>
+                {/* Product 2: Stayzy.in — Image Left, Text Right (Reversed) */}
+                <div className="product-showcase-item reversed">
+                    <div className="product-showcase-inner">
+                        <div className="product-showcase-image">
+                            <img src={stayzyImg} alt="Stayzy.in Dashboard" />
+                        </div>
+                        <div className="product-showcase-text">
+                            <span className="product-status-badge live-badge">
+                                <span className="status-dot live-dot"></span> LIVE
+                            </span>
+                            <h2 className="product-showcase-title">Stayzzy.in</h2>
+                            <p className="product-showcase-tagline">ADVANCED CO-LIVING MANAGEMENT SYSTEM</p>
+                            <p className="product-showcase-desc">
+                                A complete PG and hostel management platform built for property owners and tenants to handle rent, occupancy, and agreements.
+                            </p>
+                            <div className="product-features-grid">
+                                <div className="product-feature-item">
+                                    <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="M9 12l2 2 4-4" /></svg>
+                                    Tenant Management
                                 </div>
-                                <a href="https://stayzzy.in" target="_blank" rel="noopener noreferrer" className="product-showcase-cta">
-                                    Explore Stayzzy.in <span className="cta-arrow">→</span>
-                                </a>
+                                <div className="product-feature-item">
+                                    <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="M9 12l2 2 4-4" /></svg>
+                                    Rent Collection
+                                </div>
+                                <div className="product-feature-item">
+                                    <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="M9 12l2 2 4-4" /></svg>
+                                    Digital Rental Agreements
+                                </div>
+                                <div className="product-feature-item">
+                                    <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="M9 12l2 2 4-4" /></svg>
+                                    Occupancy Management
+                                </div>
+                                <div className="product-feature-item">
+                                    <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="M9 12l2 2 4-4" /></svg>
+                                    Maintenance Requests
+                                </div>
+                                <div className="product-feature-item">
+                                    <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="M9 12l2 2 4-4" /></svg>
+                                    Mobile Application
+                                </div>
                             </div>
+                            <a href="https://stayzzy.in" target="_blank" rel="noopener noreferrer" className="product-showcase-cta">
+                                Explore Stayzzy.in <span className="cta-arrow">→</span>
+                            </a>
                         </div>
                     </div>
+                </div>
 
-                    {/* Product 3: HRMS — Text Left, Coming Soon Card Right */}
-                    <div className="product-showcase-item">
-                        <div className="product-showcase-inner">
-                            <div className="product-showcase-text">
-                                <span className="product-status-badge coming-soon-badge">
-                                    <span className="status-dot coming-soon-dot"></span> COMING SOON
-                                </span>
-                                <h2 className="product-showcase-title">HRMS</h2>
-                                <p className="product-showcase-tagline">ENTERPRISE HUMAN RESOURCE PLATFORM</p>
-                                <p className="product-showcase-desc">
-                                    An intelligent Human Resource Management System designed to simplify workforce operations, recruiting, payroll, and appraisals.
-                                </p>
-                                <div className="product-features-grid">
-                                    <div className="product-feature-item">
-                                        <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
-                                        Employee Management
-                                    </div>
-                                    <div className="product-feature-item">
-                                        <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
-                                        Recruitment &amp; Onboarding
-                                    </div>
-                                    <div className="product-feature-item">
-                                        <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
-                                        Attendance Tracking
-                                    </div>
-                                    <div className="product-feature-item">
-                                        <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
-                                        Payroll Processing
-                                    </div>
-                                    <div className="product-feature-item">
-                                        <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
-                                        Reports &amp; Analytics
-                                    </div>
+                {/* Product 3: HRMS — Text Left, Coming Soon Card Right */}
+                <div className="product-showcase-item">
+                    <div className="product-showcase-inner">
+                        <div className="product-showcase-text">
+                            <span className="product-status-badge coming-soon-badge">
+                                <span className="status-dot coming-soon-dot"></span> COMING SOON
+                            </span>
+                            <h2 className="product-showcase-title">HRMS</h2>
+                            <p className="product-showcase-tagline">ENTERPRISE HUMAN RESOURCE PLATFORM</p>
+                            <p className="product-showcase-desc">
+                                An intelligent Human Resource Management System designed to simplify workforce operations, recruiting, payroll, and appraisals.
+                            </p>
+                            <div className="product-features-grid">
+                                <div className="product-feature-item">
+                                    <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="M9 12l2 2 4-4" /></svg>
+                                    Employee Management
                                 </div>
-                                <button className="product-showcase-cta" style={{ cursor: 'default', opacity: 0.9 }}>
-                                    Learn More <span className="cta-arrow">→</span>
-                                </button>
+                                <div className="product-feature-item">
+                                    <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="M9 12l2 2 4-4" /></svg>
+                                    Recruitment &amp; Onboarding
+                                </div>
+                                <div className="product-feature-item">
+                                    <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="M9 12l2 2 4-4" /></svg>
+                                    Attendance Tracking
+                                </div>
+                                <div className="product-feature-item">
+                                    <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="M9 12l2 2 4-4" /></svg>
+                                    Payroll Processing
+                                </div>
+                                <div className="product-feature-item">
+                                    <svg className="feature-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="M9 12l2 2 4-4" /></svg>
+                                    Reports &amp; Analytics
+                                </div>
                             </div>
-                            <div className="product-showcase-image hrms-coming-soon">
-                                <div className="coming-soon-card">
-                                    <div className="coming-soon-icon">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                                            <path d="M2 17l10 5 10-5"/>
-                                            <path d="M2 12l10 5 10-5"/>
-                                        </svg>
-                                    </div>
-                                    <h3>Launching Soon</h3>
-                                    <p>Our enterprise Human Resource Management System is currently in active development. We are engineering a unified corporate dashboard to simplify directory rosters, recruitment funnels, and automated payroll operations.</p>
+                            <button className="product-showcase-cta" style={{ cursor: 'default', opacity: 0.9 }}>
+                                Learn More <span className="cta-arrow">→</span>
+                            </button>
+                        </div>
+                        <div className="product-showcase-image hrms-coming-soon">
+                            <div className="coming-soon-card">
+                                <div className="coming-soon-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                        <path d="M2 17l10 5 10-5" />
+                                        <path d="M2 12l10 5 10-5" />
+                                    </svg>
                                 </div>
+                                <h3>Launching Soon</h3>
+                                <p>Our enterprise Human Resource Management System is currently in active development. We are engineering a unified corporate dashboard to simplify directory rosters, recruitment funnels, and automated payroll operations.</p>
                             </div>
                         </div>
                     </div>
+                </div>
 
             </section>
 
@@ -1287,7 +1330,7 @@ export default function SingleScrollPage() {
                 </div>
 
             </div>
-           
+
 
             <footer className="footer">
                 <div className="footer-container">
