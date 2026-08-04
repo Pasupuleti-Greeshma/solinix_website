@@ -63,22 +63,22 @@ export default function ContactPageSection() {
                         <div className="form-row">
                             <div className="form-group">
                                 <label>Your Name</label>
-                                <input type="text" name="name" placeholder="Enter your name" value={formData.name} onChange={handleChange} />
+                                <input type="text" name="name" placeholder="Enter your name" value={formData.name} onChange={handleChange} required />
                             </div>
                             <div className="form-group">
                                 <label>Your Email</label>
-                                <input type="email" name="email" placeholder="Enter your email" value={formData.email} onChange={handleChange} />
+                                <input type="email" name="email" placeholder="Enter your email" value={formData.email} onChange={handleChange} required />
                             </div>
                         </div>
 
                         <div className="form-group">
                             <label>Phone Number</label>
-                            <input type="text" name="phone" placeholder="Enter your phone number" value={formData.phone} onChange={handleChange} />
+                            <input type="text" name="phone" placeholder="Enter your phone number" value={formData.phone} onChange={handleChange} required />
                         </div>
 
                         <div className="form-group">
                             <label>Subject</label>
-                            <input type="text" name="subject" placeholder="How can we help you?" value={formData.subject} onChange={handleChange} />
+                            <input type="text" name="subject" placeholder="How can we help you?" value={formData.subject} onChange={handleChange} required />
                         </div>
 
                         <div className="form-group">
@@ -87,7 +87,7 @@ export default function ContactPageSection() {
                         </div>
 
                         <div className="form-checkbox">
-                            <input type="checkbox" id="terms" name="agreedToTerms" checked={formData.agreedToTerms} onChange={handleChange} />
+                            <input type="checkbox" id="terms" name="agreedToTerms" checked={formData.agreedToTerms} onChange={handleChange} required />
                             <label htmlFor="terms">
                                 I agree to the <span className="link-text">Privacy Policy</span> and <span className="link-text">Terms &amp; Conditions</span>
                             </label>

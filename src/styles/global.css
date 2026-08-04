@@ -79,15 +79,22 @@ body {
     gap: 30px;
 }
 
-.navbar nav a {
+.navbar nav a,
+.navbar nav .nav-link-button {
     text-decoration: none;
     color: black;
     font-weight: 600;
     font-size: 15px;
     transition: color 0.3s ease;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-family: inherit;
 }
 
-.navbar nav a:hover {
+.navbar nav a:hover,
+.navbar nav .nav-link-button:hover {
     color: rgb(180, 38, 196);
     border-bottom: 2px solid rgb(151, 38, 163);
 }
