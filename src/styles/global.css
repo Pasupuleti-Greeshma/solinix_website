@@ -100,7 +100,7 @@ body {
 }
 
 .navbar .consult-btn {
-    background-color: rgb(190, 83, 201);
+    background-color: rgb(138, 92, 255);
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 6px;
@@ -189,8 +189,10 @@ body {
 }
 
 .home-hero-content span {
-    padding-top: 0px;
-    margin-top: -10px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    
+
 }
 
 .primary-btn {
@@ -2736,7 +2738,7 @@ body {
     gap: 24px;
     justify-content: center;
     align-items: stretch;
-    background-color: rgba(10, 10, 35, 0.5);
+    background-color: rgb(138, 92, 255);
     padding: 40px 20px;
     flex-wrap: wrap;
     font-family: sans-serif;
@@ -2750,7 +2752,7 @@ body {
 }
 
 .testimonials-heading {
-    background-color: rgba(15, 13, 40, 0.8);
+    background-color: rgb(138, 92, 255);
     max-width: 1300px;
     margin: 0 auto;
     text-align: center;
@@ -2762,7 +2764,7 @@ body {
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 2px;
-    color: rgb(190, 83, 201);
+    color: rgb(138, 92, 255);
     margin-bottom: 15px;
     padding-top: 20px;
 }
@@ -2782,7 +2784,7 @@ body {
 }
 
 .service-card {
-    background-color: rgba(255, 255, 255, 0.03);
+    background-color: rgb(138, 92, 255);
     border-radius: 16px;
     padding: 32px;
     width: 360px;
@@ -2790,7 +2792,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(190, 83, 201, 0.3);
+    border: 1px solid rgb(138, 92, 255);
 }
 
 .service-card h2 {
@@ -2829,7 +2831,7 @@ body {
 }
 
 .service-card-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgb(138, 92, 255);
     padding-top: 24px;
 }
 
@@ -2850,22 +2852,22 @@ body {
 }
 
 .tech-tag {
-    background-color: rgba(190, 83, 201, 0.2);
+    background-color: rgba(98, 58, 255, 0.2);
     color: white;
     font-size: 12px;
     padding: 6px 14px;
     border-radius: 20px;
     font-weight: 500;
-    border: 1px solid rgb(190, 83, 201);
+    border: 1px solid rgb(138, 92, 255);
 }
 
 .explore-link {
     font-size: 14px;
     font-weight: 600;
     color: white;
-    border: 2px solid rgb(190, 83, 201);
+    border: 2px solid rgb(138, 92, 255);
     border-radius: 8px;
-    background-color: rgb(190, 83, 201);
+    background-color: rgb(138, 92, 255);
     padding: 10px;
     text-decoration: none;
     display: inline-flex;
@@ -3041,7 +3043,7 @@ body {
 }
 
 .service-card:hover {
-    border: 2px solid rgb(177, 23, 151);
+    border: 2px solid rgb(138, 92, 255);
 }
 
 .service-card-top p {
@@ -3249,13 +3251,13 @@ section:last-of-type {
 
 .premium-product-card {
     background: #ffffff;
-    border: 1px solid rgba(138, 92, 255, 0.12);
+    border: 1px solid rgb(138, 92, 255);
     border-radius: 32px;
     padding: 48px;
     display: flex;
     align-items: center;
     gap: 64px;
-    box-shadow: 0 20px 40px rgba(138, 92, 255, 0.03), 0 1px 3px rgba(0, 0, 0, 0.01);
+    box-shadow: 0 20px 40px rgbargb(138, 92, 255), 0 1px 3px rgb(138, 92, 255);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -3366,7 +3368,7 @@ section:last-of-type {
 }
 
 .product-cta-btn {
-    background-color: #8b5cff;
+    background-color: rgb(138, 92, 255);
     color: #ffffff;
     padding: 12px 28px;
     border-radius: 12px;
@@ -3383,7 +3385,7 @@ section:last-of-type {
 }
 
 .product-cta-btn:hover {
-    background-color: #7c3aed;
+    background-color: rgb(138, 92, 255);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(138, 92, 255, 0.4);
     color: #ffffff;
