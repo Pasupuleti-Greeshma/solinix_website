@@ -9,6 +9,14 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+section[id] {
+    scroll-margin-top: 90px;
+}
+
 body {
     color: #ffffff;
     overflow-x: hidden;
@@ -16,6 +24,12 @@ body {
     /* Navy Blue */
     margin: 0;
     padding-top: 70px;
+}
+
+:root {
+    --section-padding-top: 56px;
+    --section-padding-bottom: 72px;
+    --section-padding-x: 20px;
 }
 
 .solinx-single-scroll-page {
@@ -27,7 +41,7 @@ body {
 
 .core-services-section {
     background: #ffffff;
-    padding: 80px 20px;
+    padding: var(--section-padding-top) var(--section-padding-x) var(--section-padding-bottom);
     color: #111827;
 }
 
@@ -224,7 +238,7 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: #faf9ff;
     /* Subtle off-white background matching the style */
-    padding: 60px 20px;
+    padding: var(--section-padding-top) var(--section-padding-x) var(--section-padding-bottom);
     color: #111827;
 }
 
@@ -333,7 +347,7 @@ body {
 .products-section {
     font-family: 'Inter', sans-serif;
     background-color: #faf9ff;
-    padding: 60px 20px;
+    padding: var(--section-padding-top) var(--section-padding-x) var(--section-padding-bottom);
     color: #111827;
 }
 
@@ -383,6 +397,12 @@ body {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
     position: relative;
     overflow: hidden;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    border: 2px solid rgb(190, 83, 201);
+    box-shadow: 0 8px 20px rgba(190, 83, 201, 0.15);
 }
 
 .product-title-area {
@@ -600,9 +620,11 @@ body {
     min-height: 550px;
     display: flex;
     align-items: center;
+    background: url('./assets/logo.png') center/cover no-repeat;
     background-color: #ffffff;
     overflow: hidden;
     padding: 40px 0;
+    width: 100%;
 }
 
 /* 
@@ -752,7 +774,7 @@ body {
 .our-story-section {
     font-family: 'Inter', sans-serif;
     background-color: #ffffff;
-    padding: 80px 20px;
+    padding: var(--section-padding-top) var(--section-padding-x) var(--section-padding-bottom);
     color: #111827;
 }
 
@@ -803,10 +825,13 @@ body {
 
 .story-card {
     text-align: center;
-    padding: 10px;
+    padding: 16px 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 2px solid #0f172a;
+    border-radius: 12px;
+    background-color: #ffffff;
 }
 
 .story-icon-circle {
@@ -862,7 +887,7 @@ body {
 .team-section {
     font-family: 'Inter', sans-serif;
     background-color: #ffffff;
-    padding: 60px 20px;
+    padding: var(--section-padding-top) var(--section-padding-x) var(--section-padding-bottom);
     color: #111827;
 }
 
@@ -901,20 +926,25 @@ body {
 }
 
 .join-team-btn {
-    background-color: transparent;
-    color: #0f172a;
-    border: 1px solid #e2e8f0;
+    background-color: #8A5CFF;
+    color: #ffffff;
+    border: 1px solid #8A5CFF;
     padding: 10px 20px;
     font-size: 14px;
     font-weight: 600;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .join-team-btn:hover {
-    border-color: #523ee8;
-    color: #523ee8;
+    background-color: #7346e6;
+    border-color: #7346e6;
+    color: #ffffff;
 }
 
 /* Team Grid */
@@ -1047,7 +1077,7 @@ body {
 .milestones-section {
     font-family: 'Inter', sans-serif;
     background-color: #ffffff;
-    padding: 80px 20px;
+    padding: var(--section-padding-top) var(--section-padding-x) var(--section-padding-bottom);
     color: #111827;
 }
 
@@ -1406,8 +1436,7 @@ body {
 .tech-process-section {
     font-family: 'Inter', sans-serif;
     background-color: #ffffff;
-    padding: 60px 20px;
-    padding-top: 0px;
+    padding: var(--section-padding-top) var(--section-padding-x) var(--section-padding-bottom);
     color: #111827;
 }
 
@@ -1423,8 +1452,9 @@ body {
     border: 1px solid #f1f5f9;
     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
     border-radius: 20px;
-    padding: 30px 50px;
+    padding: 30px 20px;
     margin-bottom: 70px;
+    overflow: hidden;
 }
 
 .tech-stack-title {
@@ -1439,10 +1469,11 @@ body {
 
 .tech-items-row {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 15px;
-    overflow-x: auto;
+    width: max-content;
+    animation: scrollTechStack 18s linear infinite;
+    will-change: transform;
 }
 
 .tech-item {
@@ -1451,6 +1482,7 @@ body {
     align-items: center;
     gap: 8px;
     flex-shrink: 0;
+    min-width: 92px;
 }
 
 .tech-icon-circle {
@@ -1459,39 +1491,32 @@ body {
     background-color: #f8fafc;
     border: 1px solid #e2e8f0;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.tech-logo {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
 
 .tech-name {
     font-size: 13px;
     font-weight: 600;
     color: #1e293b;
+    text-align: center;
 }
 
-.slider-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 36px;
-    height: 36px;
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    color: #523ee8;
-    font-weight: bold;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    z-index: 10;
-}
-
-.left-arrow {
-    left: -18px;
-}
-
-.right-arrow {
-    right: -18px;
+@keyframes scrollTechStack {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 /* Process Section Headers */
@@ -1713,7 +1738,7 @@ body {
     background-color: #ffffff;
     display: flex;
     align-items: center;
-    padding: 60px 20px;
+    padding: var(--section-padding-top) var(--section-padding-x) var(--section-padding-bottom);
     overflow: hidden;
 }
 
@@ -1806,7 +1831,7 @@ body {
 .products-build-section {
     font-family: 'Inter', sans-serif;
     background-color: #ffffff;
-    padding: 80px 20px;
+    padding: var(--section-padding-top) var(--section-padding-x) var(--section-padding-bottom);
     color: #111827;
 }
 
@@ -3026,45 +3051,45 @@ body {
 
 section {
     margin: 0;
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding-top: 72px;
+    padding-bottom: 72px;
 }
 
 /* Hero Sections */
 .hero-section {
-    min-height: auto !important;
-    height: 500px !important;
-    padding: 40px 0 !important;
+    min-height: 500px !important;
+    height: auto !important;
+    padding: 72px 20px !important;
     margin: 0 !important;
 }
 
 /* About */
 .our-story-section {
-    padding: 55px 20px !important;
+    padding: 72px 20px !important;
 }
 
 .team-section {
-    padding: 55px 20px !important;
+    padding: 72px 20px !important;
 }
 
 .milestones-section {
-    padding: 55px 20px !important;
+    padding: 72px 20px !important;
 }
 
 .core-services-section {
-    padding: 55px 20px !important;
+    padding: 72px 20px !important;
 }
 
 .tech-process-section {
-    padding: 55px 20px !important;
+    padding: 72px 20px !important;
 }
 
 .digital-solutions-section {
-    padding: 55px 20px !important;
+    padding: 72px 20px !important;
 }
 
 .products-section {
-    padding: 55px 20px !important;
+    padding: 72px 20px !important;
 }
 
 /* Headers */
@@ -3072,22 +3097,22 @@ section {
 .team-header,
 .milestones-header,
 .core-services-header {
-    margin-bottom: 32px !important;
+    margin-bottom: 36px !important;
 }
 
 /* Large gaps inside sections */
 .team-grid {
-    margin-bottom: 45px !important;
+    margin-bottom: 24px !important;
 }
 
 .timeline-wrapper {
-    margin-bottom: 45px !important;
+    margin-bottom: 24px !important;
 }
 
 /* CTA spacing */
 .cta-banner,
 .cta-banner-card {
-    margin-top: 35px !important;
+    margin-top: 24px !important;
 }
 
 /* Hero content */
@@ -3165,4 +3190,256 @@ section:last-of-type {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+@media (max-width: 1200px) {
+    .navbar {
+        padding: 0 24px;
+    }
+
+    .navbar nav {
+        gap: 18px;
+    }
+
+    .home-hero-content {
+        padding-left: 0;
+    }
+
+    .hero-content {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .cta-banner,
+    .transformation-cta-banner,
+    .bottom-cta-banner,
+    .cta-banner-card {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 900px) {
+    body {
+        padding-top: 88px;
+    }
+
+    .navbar {
+        height: auto;
+        min-height: 70px;
+        padding: 12px 20px;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 16px;
+        padding-top: 6px;
+    }
+
+    .navbar .consult-btn {
+        margin-left: auto;
+    }
+
+    .hero-section {
+        min-height: auto;
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .home-hero-content {
+        max-width: 100%;
+    }
+
+    .home-hero-content h1 {
+        font-size: clamp(2rem, 4vw, 2.8rem);
+    }
+
+    .home-hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-buttons,
+    .button-group {
+        flex-wrap: wrap;
+    }
+
+    .hero-buttons .primary-btn,
+    .hero-buttons .secondary-btn,
+    .button-group .btn-primary,
+    .button-group .btn-secondary,
+    .join-team-btn,
+    .lets-talk-btn,
+    .schedule-call-btn,
+    .lets-talk-white-btn {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .cards-grid,
+    .products-grid,
+    .features-bar,
+    .story-right,
+    .team-grid,
+    .focus-grid,
+    .timeline-items,
+    .process-steps-grid,
+    .contact-top-cards,
+    .contact-main-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .solution-card,
+    .product-card,
+    .story-card,
+    .team-card,
+    .process-step-card,
+    .contact-form-box,
+    .contact-map-box {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .our-story-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .features-bar {
+        padding: 20px;
+    }
+
+    .feature-item {
+        align-items: center;
+    }
+
+    .cta-banner,
+    .transformation-cta-banner,
+    .bottom-cta-banner,
+    .cta-banner-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .cta-left,
+    .cta-left-side,
+    .cta-left-content {
+        width: 100%;
+    }
+
+    .cta-right-content,
+    .cta-right {
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .contact-features-row {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        padding-top: 96px;
+    }
+
+    .navbar {
+        padding: 12px 16px;
+    }
+
+    .navbar .logo img {
+        height: 80px;
+    }
+
+    .navbar nav a {
+        font-size: 13px;
+    }
+
+    .home-hero-content h1,
+    .main-heading,
+    .story-main-heading {
+        font-size: clamp(1.8rem, 7vw, 2.4rem);
+        line-height: 1.2;
+    }
+
+    .description,
+    .story-text,
+    .product-card p,
+    .feature-item p {
+        font-size: 0.95rem;
+    }
+
+    .section-header,
+    .process-header,
+    .milestones-header,
+    .products-build-header {
+        margin-bottom: 24px;
+    }
+
+    .product-image-box {
+        height: 200px;
+    }
+
+    .solution-card,
+    .product-card,
+    .story-card,
+    .team-card,
+    .process-step-card,
+    .contact-form-box,
+    .contact-map-box {
+        border-radius: 10px;
+    }
+
+    .team-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .join-team-btn {
+        width: 100%;
+    }
+
+    .tech-stack-wrapper {
+        padding: 20px 12px;
+    }
+
+    .tech-item {
+        min-width: 84px;
+    }
+
+    .tech-name {
+        font-size: 12px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .footer {
+        padding: 32px 20px 20px;
+    }
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./app1.css";
 
 // Import assets as needed
@@ -12,6 +12,10 @@ import karthikImg from './assets/karthik.png';
 import naveenImg from './assets/naveen.png';
 import divyaImg from './assets/divya.png';
 import sandeepImg from './assets/sandeep.png';
+import saritha from './assets/saritha.png';
+import pavan from './assets/pavan.png';
+import rohitha from './assets/rohita.jpeg';
+import greeshmapic from './assets/Greeshmapic.png';
 
 export default function SingleScrollPage() {
     const handleConsultationSubmit = (e) => {
@@ -58,6 +62,11 @@ export default function SingleScrollPage() {
         { name: 'Naveen R', role: 'Lead Developer', imageUrl: naveenImg },
         { name: 'Divya N', role: 'UI/UX Designer', imageUrl: divyaImg },
         { name: 'Sandeep K', role: 'Marketing Lead', imageUrl: sandeepImg },
+        { name: 'Greeshma P', role: 'Full Stack Developer', imageUrl: greeshmapic },
+        { name: 'Pavan ', role: 'Full Stack Developer', imageUrl: pavan },
+        { name: 'Rohitha ', role: 'Full Stack Developer', imageUrl: rohitha },
+        { name: 'Saritha', role: 'Full Stack Developer', imageUrl: saritha },
+
     ];
     const focusItems = [
         { title: 'Client Success', desc: 'We build solutions that solve real business problems.' },
@@ -152,6 +161,23 @@ export default function SingleScrollPage() {
             description: "Secure hosting, cloud deployment and ongoing support to keep your software running at peak performance 24/7.",
             features: ["AWS & Azure", "DevOps & CI/CD", "Performance Monitoring", "24/7 Support"],
             technologies: ["AWS", "Docker", "Kubernetes", "Redis"]
+        }, {
+            title: "Artificial Intelligence & GenAI",
+            description: "Intelligent systems and autonomous agents that automate workflows, streamline coding, and deliver smart predictive insights.",
+            features: ["Machine Learning", "NLP & LLMs", "Predictive Analytics", "AI Code Assistants"],
+            technologies: ["Python", "TensorFlow", "PyTorch", "OpenAI APIs"]
+        },
+        {
+            title: "Cybersecurity & DevSecOps",
+            description: "Proactive threat detection and automated security integration built directly into the software delivery pipeline.",
+            features: ["Threat Detection", "Security Automation", "Vulnerability Scanning", "Compliance Auditing"],
+            technologies: ["SonarQube", "HashiCorp Vault", "OWASP", "SIEM Tools"]
+        },
+        {
+            title: "Cross-Platform Development",
+            description: "High-performance applications built with a single codebase to seamlessly scale across web, iOS, and Android platforms.",
+            features: ["Single Codebase", "Native Performance", "Responsive UI", "Rapid Prototyping"],
+            technologies: ["Flutter", "React Native", "Progressive Web Apps", "Kotlin Multiplatform"]
         }
     ];
 
@@ -231,13 +257,8 @@ export default function SingleScrollPage() {
             icon: "fa-solid fa-rocket"
         }
     ];
-    const [isDarkMode, setIsDarkMode] = useState(false);
-
-    const toggleTheme = () => {
-        setIsDarkMode(!isDarkMode);
-    };
     return (
-        <div>
+        <div className="solinx-single-scroll-page light-theme">
             {/* INTEGRATED NAVBAR */}
             <header className="navbar">
                 <div className="logo">
@@ -248,11 +269,10 @@ export default function SingleScrollPage() {
                     <a href="#about">About Us</a>
                     <a href="#services">Services</a>
                     <a href="#products">Products</a>
-                    <a href="#roadmap">Process</a>
+                    <a href="#process">Blog</a>
                     <a href="#contact">Contact</a>
                 </nav>
                 <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
-                 
                     <a href="#contact" className="consult-btn">
                         Let's talk
                     </a>
@@ -352,7 +372,7 @@ export default function SingleScrollPage() {
                                     <h3>Stayzzy</h3>
                                 </div>
                                 <p>Complete PG management app for owners and tenants.</p>
-                                <a href="#" class="learn-more">Learn More &rarr;</a>
+                                <a href="https://stayzzy.in" class="learn-more">Learn More &rarr;</a>
                             </div>
                             <div class="product-mockup phone-mockup">
                                 <div class="mockup-screen"></div>
@@ -369,7 +389,7 @@ export default function SingleScrollPage() {
                                     <h3>PGMove</h3>
                                 </div>
                                 <p>Marketplace to discover and book PGs and flats easily.</p>
-                                <a href="#" class="learn-more">Learn More &rarr;</a>
+                                <a href="https://pgmove.in" class="learn-more">Learn More &rarr;</a>
                             </div>
                             <div class="product-mockup tablet-mockup">
                                 <div class="mockup-screen"></div>
@@ -475,7 +495,7 @@ export default function SingleScrollPage() {
               
             </section>
 
-            <section className="our-story-section">
+            <section className="our-story-section" id="about">
                 <div className="our-story-container">
 
                     {/* Left Side: Text Content */}
@@ -537,9 +557,9 @@ export default function SingleScrollPage() {
                             <span className="sub-heading">OUR TEAM</span>
                             <h2 className="main-heading">The People Behind Solinix</h2>
                         </div>
-                        <button className="join-team-btn">
+                        <a href="#contact" className="join-team-btn">
                             Join Our Team &rarr;
-                        </button>
+                        </a>
                     </div>
 
                     {/* Team Cards Grid */}
@@ -675,7 +695,7 @@ export default function SingleScrollPage() {
                     </div> */}
                 </div>
             </section>
-            <section className="core-services-section">
+            <section className="core-services-section" id="services">
                 <div className="core-services-container">
 
                     {/* Section Header */}
@@ -722,30 +742,22 @@ export default function SingleScrollPage() {
 
                 </div>
             </section>
-            <section className="tech-process-section">
+            <section className="tech-process-section" id="process">
                 <div className="container">
 
-                    {/* Technology Stack Carousel Bar */}
+                    {/* Technology Stack Auto-Scrolling Bar */}
                     <div className="tech-stack-wrapper">
-                        <button className="slider-arrow left-arrow" aria-label="Previous">
-                            &larr;
-                        </button>
-
                         <div className="tech-stack-container">
                             <span className="tech-stack-title">TECHNOLOGY STACK WE USE</span>
                             <div className="tech-items-row">
-                                {techStack.map((tech, index) => (
-                                    <div className="tech-item" key={index}>
+                                {techStack.concat(techStack).map((tech, index) => (
+                                    <div className="tech-item" key={`${tech.name}-${index}`}>
                                         <div className="tech-icon-circle"><img src={tech.icon} alt={tech.name} className="tech-logo" /></div>
                                         <span className="tech-name">{tech.name}</span>
                                     </div>
                                 ))}
                             </div>
                         </div>
-
-                        <button className="slider-arrow right-arrow" aria-label="Next">
-                            &rarr;
-                        </button>
                     </div>
 
                     {/* Process Section */}
@@ -823,7 +835,7 @@ export default function SingleScrollPage() {
 
                 </div>
             </section>
-            <section className="products-build-section">
+            <section className="products-build-section" id="products">
                 <div className="products-build-container">
 
                     {/* Section Header */}
