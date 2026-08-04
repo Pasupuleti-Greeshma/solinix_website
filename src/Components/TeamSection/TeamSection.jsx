@@ -26,7 +26,6 @@ export default function TeamSection() {
                                 <p>{member.role}</p>
                                 <div className="social-icons">
                                     <span className="social-icon">in</span>
-                                    <span className="social-icon">📸</span>
                                     <span className="social-icon">✉</span>
                                 </div>
                             </div>
