@@ -155,9 +155,9 @@ body {
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 1px;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
     border-radius: 4px;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 
@@ -297,10 +297,10 @@ body {
     background: #ffffff;
     border: 1px solid #f1f5f9;
     border-radius: 12px;
-    padding: 24px;
+    padding: 12px 16px;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 14px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
     transition: all 0.3s ease;
 }
@@ -2055,7 +2055,7 @@ body {
     position: relative;
     width: 100%;
     background-color: #ffffff;
-    padding: 80px 20px;
+    padding: 15px 20px 80px 20px;
     overflow: hidden;
 }
 
@@ -2266,7 +2266,7 @@ body {
     background-color: #ffffff;
     display: flex;
     align-items: center;
-    padding: 80px 20px;
+    padding: 15px 20px 80px 20px;
     overflow: hidden;
 }
 
@@ -2912,8 +2912,9 @@ body {
     margin-bottom: 20px;
 }
 
-.social-icons {
+.footer .social-icons {
     display: flex;
+    justify-content: flex-start;
     gap: 15px;
 }
 
@@ -3074,37 +3075,37 @@ section {
 .hero-section {
     min-height: 500px !important;
     height: auto !important;
-    padding: 72px 20px !important;
+    padding: 30px 20px 72px 20px !important;
     margin: 0 !important;
 }
 
 /* About */
 .our-story-section {
-    padding: 72px 20px !important;
+    padding: 72px 20px 30px 20px !important;
 }
 
 .team-section {
-    padding: 72px 20px !important;
+    padding: 15px 20px 30px 20px !important;
 }
 
 .milestones-section {
-    padding: 72px 20px !important;
+    padding: 15px 20px 72px 20px !important;
 }
 
 .core-services-section {
-    padding: 72px 20px !important;
+    padding: 72px 20px 20px 20px !important;
 }
 
 .tech-process-section {
-    padding: 72px 20px !important;
+    padding: 0px 20px 72px 20px !important;
 }
 
 .digital-solutions-section {
-    padding: 72px 20px !important;
+    padding: 30px 20px 40px 20px !important;
 }
 
 .products-section {
-    padding: 72px 20px !important;
+    padding: 15px 20px 72px 20px !important;
 }
 
 /* Headers */

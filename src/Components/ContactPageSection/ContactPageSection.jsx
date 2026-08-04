@@ -35,7 +35,7 @@ export default function ContactPageSection() {
                     </div>
                     <div>
                         <h4>Email Us</h4>
-                        <p>hello@solinix.com<br />We'll reply within 24 hours</p>
+                        <p>solinix.tech@gmail.com<br />We'll reply within 24 hours</p>
                     </div>
                 </div>
 
@@ -45,10 +45,10 @@ export default function ContactPageSection() {
                     </div>
                     <div>
                         <h4>Follow Us</h4>
-                        <div className="social-icons">
-                            <span>in</span>
-                            <span>📷</span>
-                            <span>git</span>
+                        <div className="social-icons" style={{ display: "flex", gap: "12px", marginTop: "4px" }}>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style={{ color: "#523ee8" }}><i className="fab fa-linkedin-in"></i></a>
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={{ color: "#523ee8" }}><i className="fab fa-instagram"></i></a>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" style={{ color: "#523ee8" }}><i className="fab fa-github"></i></a>
                         </div>
                     </div>
                 </div>
@@ -129,7 +129,7 @@ export default function ContactPageSection() {
                 </div>
 
                 <div className="cta-right">
-                    <button className="schedule-call-btn">Schedule a Call &rarr;</button>
+                    <a href="mailto:solinix.tech@gmail.com" className="schedule-call-btn" style={{ textDecoration: "none" }}>Schedule a Call &rarr;</a>
                     <div className="team-avatars-note">
                         <div className="avatars-group">
                             <span>👤</span><span>👤</span><span>👤</span>

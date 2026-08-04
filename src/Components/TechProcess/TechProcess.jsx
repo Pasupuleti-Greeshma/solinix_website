@@ -56,7 +56,7 @@ export default function TechProcess() {
                     </div>
 
                     <div className="cta-right-content">
-                        <button className="lets-talk-white-btn">Let's Talk &rarr;</button>
+                        <a href="/#contact" className="lets-talk-white-btn" style={{ textDecoration: 'none' }}>Let's Talk &rarr;</a>
                         <div className="cta-avatars-group">
                             <div className="avatar-img"></div>
                             <div className="avatar-img"></div>

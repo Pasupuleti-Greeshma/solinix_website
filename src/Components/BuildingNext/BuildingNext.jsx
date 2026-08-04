@@ -53,7 +53,7 @@ export default function BuildingNext() {
                     </div>
 
                     <div className="cta-right-side">
-                        <button className="lets-talk-white-btn">Let's Talk &rarr;</button>
+                        <a href="/#contact" className="lets-talk-white-btn" style={{ textDecoration: 'none' }}>Let's Talk &rarr;</a>
                     </div>
                 </div>
             </div>
