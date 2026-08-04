@@ -13,7 +13,7 @@ export const teamMembers = [
   // { name: 'Sarath Chandra', role: 'Founder & CEO', imageUrl: sarathImg },
   // { name: 'Karthik M', role: 'CTO', imageUrl: karthikImg },
   // { name: 'Naveen R', role: 'Lead Developer', imageUrl: naveenImg },
-  { name: 'Aradhana', role: 'UI/UX Designer', imageUrl: aaradhanaImg },
+  { name: 'Aradhana', role: 'Full Stack Developer', imageUrl: aaradhanaImg },
   // { name: 'Sandeep K', role: 'Marketing Lead', imageUrl: sandeepImg },
   { name: 'Greeshma P', role: 'Full Stack Developer', imageUrl: greeshmapic },
   { name: 'Pavan ', role: 'Full Stack Developer', imageUrl: pavan },

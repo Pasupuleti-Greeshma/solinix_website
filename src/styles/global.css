@@ -2413,7 +2413,7 @@ body {
 
 .description {
     font-size: 1rem;
-    color: #64748b;
+    color: #000000;
     line-height: 1.6;
     margin-bottom: 35px;
 }
@@ -3581,7 +3581,8 @@ section:last-of-type {
     }
 
     .navbar .logo img {
-        height: 70px;
+        height: 100px;
+        padding-top: 0;
     }
 
     .navbar nav {
@@ -3631,6 +3632,7 @@ section:last-of-type {
         display: flex;
         order: 3;
         margin-left: auto;
+        transform: translateY(-4px);
     }
 
     .navbar .mobile-only-action {
@@ -3800,6 +3802,11 @@ section:last-of-type {
         gap: 18px;
     }
 
+    .contact-bg-layer {
+        background-size: cover !important;
+        background-position: center !important;
+    }
+
     .form-row {
         grid-template-columns: 1fr;
     }
@@ -3819,7 +3826,8 @@ section:last-of-type {
     }
 
     .navbar .logo img {
-        height: 60px;
+        height: 90px;
+        padding-top: 0;
     }
 
     .home-hero-content h1,
