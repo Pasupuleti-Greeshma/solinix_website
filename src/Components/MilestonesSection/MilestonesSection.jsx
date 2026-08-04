@@ -39,7 +39,7 @@ export default function MilestonesSection() {
                     </div>
 
                     <div className="cta-right">
-                        <button className="lets-talk-btn">Let's Talk &rarr;</button>
+                        <a href="/#contact" className="lets-talk-btn" style={{ textDecoration: 'none' }}>Let's Talk &rarr;</a>
                         <div className="cta-team-avatars">
                             <div className="avatar"></div>
                             <div className="avatar"></div>
