@@ -13,7 +13,7 @@ export default function Navbar() {
                 <a href="#about">About Us</a>
                 <a href="#services">Services</a>
                 <a href="#products">Products</a>
-                <a href="#process">Blog</a>
+                <a href="javascript:void(0);" onClick="alert('Coming soon!!!');">Blog</a>
                 <a href="#contact">Contact</a>
             </nav>
             <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
