@@ -114,6 +114,26 @@ body {
     background-color: rgb(79, 70, 229);
 }
 
+.navbar .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(79, 70, 229);
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease;
+}
+
+.navbar .mobile-only-action {
+    display: none;
+}
+
+.navbar .menu-toggle:hover {
+    color: rgb(180, 38, 196);
+}
+
 /* Theme Toggle Button Style */
 .theme-toggle-btn {
     background-color: transparent;
@@ -754,7 +774,7 @@ body {
 
 .description {
     font-size: 1.05rem;
-    color: #4b5563;
+    color: #000000;
     line-height: 1.6;
     margin: 0 0 2rem 0;
 }
@@ -3539,35 +3559,124 @@ section:last-of-type {
 
 @media (max-width: 900px) {
     body {
-        padding-top: 88px;
+        padding-top: 70px;
     }
 
     .navbar {
-        height: auto;
+        height: 70px;
         min-height: 70px;
-        padding: 12px 20px;
-        gap: 12px;
-        flex-wrap: wrap;
-    }
-
-    .navbar .logo {
-        width: 100%;
+        padding: 0 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+
+    .navbar .logo {
+        order: 1;
+        width: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar .logo img {
+        height: 70px;
     }
 
     .navbar nav {
-        order: 3;
+        display: none;
+        position: fixed;
+        top: 70px;
+        left: 0;
         width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px 16px;
-        padding-top: 6px;
+        height: calc(100vh - 70px);
+        background-color: #ffffff;
+        flex-direction: column;
+        gap: 12px;
+        padding: 24px;
+        z-index: 999;
+        box-sizing: border-box;
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
+        order: 3;
     }
 
-    .navbar .consult-btn {
+    .navbar nav.nav-open {
+        display: flex;
+    }
+
+    .navbar nav a {
+        width: 100%;
+        padding: 12px 16px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #1e293b;
+        text-decoration: none;
+        box-sizing: border-box;
+        border-radius: 8px;
+        transition: background-color 0.2s ease, color 0.2s ease;
+        border-bottom: none;
+    }
+
+    .navbar nav a:hover {
+        background-color: #f1f5f9;
+        color: rgb(79, 70, 229);
+    }
+
+    .navbar .nav-actions {
+        display: none;
+    }
+
+    .navbar .menu-toggle {
+        display: flex;
+        order: 3;
         margin-left: auto;
+    }
+
+    .navbar .mobile-only-action {
+        display: block;
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: 40px;
+    }
+
+    .navbar .mobile-consult-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        background-color: rgb(79, 70, 229);
+        color: #ffffff !important;
+        padding: 14px;
+        border-radius: 12px;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+        box-sizing: border-box;
+        transition: background-color 0.2s ease;
+        border: none;
+        box-shadow: 0 4px 14px rgba(79, 70, 229, 0.3);
+    }
+
+    .navbar .mobile-consult-btn:hover {
+        background-color: rgb(67, 56, 202);
+    }
+
+    #home.hero-section {
+        height: auto !important;
+        min-height: auto !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
+    }
+
+    #home.hero-section::after {
+        width: 100% !important;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.2) 100%) !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
     }
 
     .hero-section {
@@ -3586,6 +3695,27 @@ section:last-of-type {
 
     .home-hero-content p {
         font-size: 1rem;
+    }
+
+    .home-hero-content br,
+    .hero-content br {
+        display: none;
+    }
+
+    .hero-background {
+        width: 100% !important;
+    }
+
+    .hero-background::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.2) 100%) !important;
+        z-index: 2;
+        pointer-events: none;
     }
 
     .hero-buttons,
@@ -3681,19 +3811,15 @@ section:last-of-type {
 
 @media (max-width: 640px) {
     body {
-        padding-top: 96px;
+        padding-top: 70px;
     }
 
     .navbar {
-        padding: 12px 16px;
+        padding: 0 16px;
     }
 
     .navbar .logo img {
-        height: 80px;
-    }
-
-    .navbar nav a {
-        font-size: 13px;
+        height: 60px;
     }
 
     .home-hero-content h1,
