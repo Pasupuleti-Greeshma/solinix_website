@@ -56,6 +56,12 @@ export default function ContactPageSection() {
                             >
                                 <i className="fab fa-facebook"></i>
                             </a>
+                            <a
+                                href="mailto:solinix.tech@gmail.com"
+                                style={{ color: "#523ee8" }}
+                            >
+                                <i className="fas fa-envelope"></i>
+                            </a>
                         </div>
                     </div>
                 </div>

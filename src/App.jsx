@@ -27,14 +27,16 @@ function HomePage({ onHrmsClick }) {
     useEffect(() => {
         const observerOptions = {
             root: null,
-            rootMargin: "0px",
-            threshold: 0.1,
+            rootMargin: "-20px 0px",
+            threshold: 0.02,
         };
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add("reveal-visible");
+                } else {
+                    entry.target.classList.remove("reveal-visible");
                 }
             });
         }, observerOptions);
@@ -49,9 +51,9 @@ function HomePage({ onHrmsClick }) {
 
     return (
         <>
-            <HeroHome />
+            <div className="reveal"><HeroHome /></div>
             <div className="reveal"><DigitalSolutions /></div>
-            <div className="reveal"><ProductsShowcase onHrmsClick={onHrmsClick} /></div>
+            <ProductsShowcase onHrmsClick={onHrmsClick} />
             <div className="reveal"><AboutHero /></div>
             <div className="reveal"><OurStory /></div>
             <div className="reveal"><TeamSection /></div>
