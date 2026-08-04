@@ -14,7 +14,6 @@ import MilestonesSection from "./Components/MilestonesSection/MilestonesSection"
 import ServicesHero from "./Components/ServicesHero/ServicesHero";
 import CoreServices from "./Components/CoreServices/CoreServices";
 import TechProcess from "./Components/TechProcess/TechProcess";
-import BuildingNext from "./Components/BuildingNext/BuildingNext";
 import ContactHero from "./Components/ContactHero/ContactHero";
 import ContactPageSection from "./Components/ContactPageSection/ContactPageSection";
 import Footer from "./Components/Footer/Footer";
@@ -60,7 +59,7 @@ function HomePage({ onHrmsClick }) {
             <div className="reveal"><ServicesHero /></div>
             <div className="reveal"><CoreServices /></div>
             <div className="reveal"><TechProcess /></div>
-            <div className="reveal"><BuildingNext /></div>
+            
             <div className="reveal"><ContactHero /></div>
             <div className="reveal"><ContactPageSection /></div>
         </>
