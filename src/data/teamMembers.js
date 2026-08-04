@@ -8,7 +8,7 @@ import saritha from '../assets/saritha.png';
 import pavan from '../assets/pavan.png';
 import rohitha from '../assets/rohita.jpeg';
 import greeshmapic from '../assets/Greeshmapic.png';
-
+import ankit from '../assets/ankit.png';
 export const teamMembers = [
   { name: 'Sarath Chandra', role: 'Founder & CEO', imageUrl: sarathImg },
   { name: 'Karthik M', role: 'CTO', imageUrl: karthikImg },
@@ -18,5 +18,6 @@ export const teamMembers = [
   { name: 'Greeshma P', role: 'Full Stack Developer', imageUrl: greeshmapic },
   { name: 'Pavan ', role: 'Full Stack Developer', imageUrl: pavan },
   { name: 'Rohitha ', role: 'Full Stack Developer', imageUrl: rohitha },
-  { name: 'Saritha', role: 'Full Stack Developer', imageUrl: saritha },
+  { name: 'Saritha S', role: 'Full Stack Developer', imageUrl: saritha },
+  { name: 'Ankit D', role: 'Full Stack Developer', imageUrl: ankit },
 ];
