@@ -12,14 +12,13 @@ export default function TeamSection() {
                         <span className="sub-heading">OUR TEAM</span>
                         <h2 className="main-heading">The People Behind Solinix</h2>
                     </div>
-                    <a href="#contact" className="join-team-btn">Join Our Team &rarr;</a>
                 </div>
 
                 <div className="team-grid">
                     {teamMembers.map((member, index) => (
                         <div className="team-card" key={index}>
                             <div className="team-image-box">
-                                <img src={member.imageUrl} alt={member.name} className="team-member-photo" />
+                                <img src={member.imageUrl} alt={member.name} className="team-member-photo" style={{ objectPosition: member.objectPosition || 'center' }} />
                                 <div className="placeholder-avatar"></div>
                             </div>
                             <div className="team-info">

@@ -3,7 +3,7 @@ import React from "react";
 // VIEW: About / hero section with background image
 export default function AboutHero() {
     return (
-        <section className="hero-section">
+        <section className="hero-section about-hero-section">
             <div className="hero-background"></div>
             <div className="hero-content">
                 <span className="sub-heading">ABOUT SOLINIX</span>

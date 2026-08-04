@@ -14,7 +14,7 @@ export default function ProductsShowcase({ onHrmsClick }) {
 
                 <div className="products-list-wrapper">
                     {/* Card 1: PGMove.in */}
-                    <div className="premium-product-card">
+                    <div className="premium-product-card reveal">
                         <div className="product-text-side">
                             <div className="status-badge live">
                                 <span className="badge-dot"></span> LIVE
@@ -51,7 +51,7 @@ export default function ProductsShowcase({ onHrmsClick }) {
                     </div>
 
                     {/* Card 2: Stayzy.in */}
-                    <div className="premium-product-card">
+                    <div className="premium-product-card reveal">
                         <div className="product-image-side">
                             <img src={stayzyImg} alt="Stayzy.in Mockup" className="product-mockup-img" />
                         </div>
@@ -91,7 +91,7 @@ export default function ProductsShowcase({ onHrmsClick }) {
                     </div>
 
                     {/* Card 3: HRMS */}
-                    <div className="premium-product-card">
+                    <div className="premium-product-card reveal">
                         <div className="product-text-side">
                             <div className="status-badge coming-soon">
                                 <span className="badge-dot gray"></span> COMING SOON
