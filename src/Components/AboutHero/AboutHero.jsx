@@ -22,8 +22,8 @@ export default function AboutHero() {
                         digital products.
                     </p>
                     <div className="button-group">
-                        <a href="#team" className="btn-primary">Our Story <span className="arrow">→</span></a>
-                        <a href="#team" className="btn-secondary">Our Work <span className="arrow">→</span></a>
+                        <a href="#about" className="btn-primary">Our Story <span className="arrow">→</span></a>
+                        <a href="#team" className="btn-secondary">Our Team <span className="arrow">→</span></a>
                     </div>
                 </div>
 
