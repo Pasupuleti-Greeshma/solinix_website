@@ -10,10 +10,10 @@ export default function Footer() {
                     <h2 className="footer-logo">SOLI<span>NIX</span></h2>
                     <p className="footer-desc">Solinix is a software development company passionate about building innovative digital solutions that drive business growth.</p>
                     <div className="social-icons">
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/sarath-chandra-30a251391/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                             <i className="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <a href="https://www.instagram.com/pgmovein?igsh=dGN3MGJ6cjNmMTZs" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                             <i className="fab fa-instagram"></i>
                         </a>
                         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
@@ -58,7 +58,7 @@ export default function Footer() {
                     <h3>Contact Us</h3>
                     <ul>
                         <li><span className="icon"><i className="fas fa-phone-alt"></i></span> +91 91084 21609</li>
-                        <li><span className="icon"><i className="far fa-envelope"></i></span> solinix.tech@gmail.com</li>
+                        <li><span className="icon"><i className="far fa-envelope"></i></span> <a href="mailto:solinix.tech@gmail.com">solinix.tech@gmail.com</a></li>
                         <li><span className="icon"><i className="fas fa-map-marker-alt"></i></span> Hyderabad, India</li>
                     </ul>
                 </div>

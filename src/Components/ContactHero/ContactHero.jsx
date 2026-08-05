@@ -71,7 +71,7 @@ export default function ContactHero() {
                         </div>
                         <div>
                             <h4>Email Us</h4>
-                            <p>solinix.tech@gmail.com<br />We'll reply within 24 hours</p>
+                            <p><a href="mailto:solinix.tech@gmail.com" style={{ color: "inherit", textDecoration: "none" }}>solinix.tech@gmail.com</a><br />We'll reply within 24 hours</p>
                         </div>
                     </div>
 
@@ -82,8 +82,8 @@ export default function ContactHero() {
                         <div>
                             <h4>Follow Us</h4>
                             <div className="social-icons" style={{ display: "flex", gap: "12px", marginTop: "4px" }}>
-                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style={{ color: "#523ee8" }}><i className="fab fa-linkedin-in"></i></a>
-                                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={{ color: "#523ee8" }}><i className="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/sarath-chandra-30a251391/" target="_blank" rel="noopener noreferrer" style={{ color: "#523ee8" }}><i className="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.instagram.com/pgmovein?igsh=dGN3MGJ6cjNmMTZs" target="_blank" rel="noopener noreferrer" style={{ color: "#523ee8" }}><i className="fab fa-instagram"></i></a>
                                 <a
                                     href="https://facebook.com"
                                     target="_blank"

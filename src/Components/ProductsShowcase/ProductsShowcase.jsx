@@ -1,6 +1,4 @@
 import React from "react";
-import stayzyImg from "../../assets/stayzy.png";
-import pgmoveImg from "../../assets/pgmove.png";
 
 // VIEW: Premium alternating product showcase cards matching the custom layout
 export default function ProductsShowcase({ onHrmsClick }) {
@@ -38,7 +36,7 @@ export default function ProductsShowcase({ onHrmsClick }) {
                                     <div className="browser-dots"><span></span><span></span><span></span></div>
                                 </div>
                                 {/* Placeholder for Browser Mockup Image */}
-                                <div className="mockup-screen-placeholder browser-screen" style={{ backgroundImage: `url(${pgmoveImg})` }}></div>
+                                <div className="mockup-screen-placeholder browser-screen" style={{ backgroundImage: `url('/pgmove.png')` }}></div>
                             </div>
                         </div>
 
@@ -46,7 +44,7 @@ export default function ProductsShowcase({ onHrmsClick }) {
                         <div className="showcase-card">
                             <div className="card-media mockup-phone">
                                 {/* Placeholder for Phone Mockup Image */}
-                                <div className="mockup-screen-placeholder phone-screen" style={{ backgroundImage: `url(${stayzyImg})` }}></div>
+                                <div className="mockup-screen-placeholder phone-screen" style={{ backgroundImage: `url('/stayzy.png')` }}></div>
                             </div>
                             <div className="card-content">
                                 <span className="badge live">● LIVE</span>
