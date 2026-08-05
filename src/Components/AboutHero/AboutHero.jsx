@@ -22,8 +22,8 @@ export default function AboutHero() {
                         digital products.
                     </p>
                     <div className="button-group">
-                        <button className="btn-primary">Our Story <span className="arrow">→</span></button>
-                        <button className="btn-secondary">Our Work <span className="arrow">→</span></button>
+                        <a href="#team" className="btn-primary">Our Story <span className="arrow">→</span></a>
+                        <a href="#team" className="btn-secondary">Our Work <span className="arrow">→</span></a>
                     </div>
                 </div>
 
@@ -71,7 +71,7 @@ export default function AboutHero() {
                     </div>
                 </div>
             </section>
-            <section className="team-section">
+            <section className="team-section" id="team">
                 <div className="team-container">
                     <div className="team-header">
                         <div>

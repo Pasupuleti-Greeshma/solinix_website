@@ -798,6 +798,7 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    text-decoration: none;
 }
 
 .btn-primary {
