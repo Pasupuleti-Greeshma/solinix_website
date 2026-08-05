@@ -5,135 +5,99 @@ import pgmoveImg from "../../assets/pgmove.png";
 // VIEW: Premium alternating product showcase cards matching the custom layout
 export default function ProductsShowcase({ onHrmsClick }) {
     return (
-        <section className="products-section" id="products">
-            <div className="container">
-                <div className="section-header">
-                    <span className="sub-heading">OUR PRODUCTS</span>
-                    <h2 className="main-heading">Products We Build & Own</h2>
-                </div>
-
-                <div className="products-list-wrapper">
-                    {/* Card 1: PGMove.in */}
-                    <div className="premium-product-card reveal">
-                        <div className="product-text-side">
-                            <div className="status-badge live">
-                                <span className="badge-dot"></span> LIVE
-                            </div>
-                            <h2 className="product-card-title">PGMove.in</h2>
-                            <span className="product-card-subtitle">SMART PG & RENTAL MANAGEMENT PLATFORM</span>
-                            <p className="product-card-desc">
-                                A smart platform that connects people with PGs, hostels, and rental accommodations — while helping property owners manage listings and receive quality leads.
-                            </p>
-                            <div className="product-features-grid">
-                                <div className="feature-bullet">
-                                    <span className="bullet-check">✓</span> Smart Property Search
-                                </div>
-                                <div className="feature-bullet">
-                                    <span className="bullet-check">✓</span> Property Listings
-                                </div>
-                                <div className="feature-bullet">
-                                    <span className="bullet-check">✓</span> Lead Management
-                                </div>
-                                <div className="feature-bullet">
-                                    <span className="bullet-check">✓</span> Owner Dashboard
-                                </div>
-                                <div className="feature-bullet">
-                                    <span className="bullet-check">✓</span> Rental Discovery
-                                </div>
-                            </div>
-                            <a href="https://pgmove.in" className="product-cta-btn" target="_blank" rel="noopener noreferrer">
-                                Visit PGMove.in &rarr;
-                            </a>
-                        </div>
-                        <div className="product-image-side">
-                            <img src={pgmoveImg} alt="PGMove.in Mockup" className="product-mockup-img" />
-                        </div>
+        <>
+            <section className="products-section" id="products">
+                <div className="container">
+                    <div className="section-header">
+                        <span className="sub-heading">OUR PRODUCTS</span>
+                        <h2 className="main-heading">Products We Build & Own</h2>
                     </div>
 
-                    {/* Card 2: Stayzy.in */}
-                    <div className="premium-product-card reveal">
-                        <div className="product-image-side">
-                            <img src={stayzyImg} alt="Stayzy.in Mockup" className="product-mockup-img" />
-                        </div>
-                        <div className="product-text-side">
-                            <div className="status-badge live">
-                                <span className="badge-dot"></span> LIVE
+                    <div className="showcase-container">
+                        {/* CARD 1: PGMove.in (Image on Right) */}
+                        <div className="showcase-card">
+                            <div className="card-content">
+                                <span className="badge live">● LIVE</span>
+                                <h2 className="card-title">PGMove.in</h2>
+                                <span className="card-subtitle">SMART PG & RENTAL MANAGEMENT PLATFORM</span>
+                                <p className="card-description">
+                                    A modern marketplace connecting tenants with verified PGs, hostels, and rental accommodations, while providing property owners with automated listing tools and qualified lead generation.
+                                </p>
+                                <div className="features-grid">
+                                    <div className="feature-item"><span className="check-icon">✓</span> Smart Property Search</div>
+                                    <div className="feature-item"><span className="check-icon">✓</span> Property Listings</div>
+                                    <div className="feature-item"><span className="check-icon">✓</span> Lead Management</div>
+                                    <div className="feature-item"><span className="check-icon">✓</span> Owner Dashboard</div>
+                                    <div className="feature-item"><span className="check-icon">✓</span> Rental Discovery</div>
+                                    <div className="feature-item"><span className="check-icon">✓</span> Instant Booking</div>
+                                </div>
+                                <a href="https://pgmove.in" target="_blank" rel="noopener noreferrer" className="primary-btn" style={{ textDecoration: 'none', display: 'inline-block' }}>Visit PGMove.in &rarr;</a>
                             </div>
-                            <h2 className="product-card-title">Stayzy.in</h2>
-                            <span className="product-card-subtitle">ADVANCED CO-LIVING MANAGEMENT SYSTEM</span>
-                            <p className="product-card-desc">
-                                A complete PG and hostel management platform built for property owners and tenants to handle rent, occupancy, and agreements.
-                            </p>
-                            <div className="product-features-grid">
-                                <div className="feature-bullet">
-                                    <span className="bullet-check">✓</span> Tenant Management
+                            <div className="card-media mockup-browser">
+                                <div className="browser-header">
+                                    <div className="browser-dots"><span></span><span></span><span></span></div>
                                 </div>
-                                <div className="feature-bullet">
-                                    <span className="bullet-check">✓</span> Rent Collection
-                                </div>
-                                <div className="feature-bullet">
-                                    <span className="bullet-check">✓</span> Digital Rental Agreements
-                                </div>
-                                <div className="feature-bullet">
-                                    <span className="bullet-check">✓</span> Occupancy Management
-                                </div>
-                                <div className="feature-bullet">
-                                    <span className="bullet-check">✓</span> Maintenance Requests
-                                </div>
-                                <div className="feature-bullet">
-                                    <span className="bullet-check">✓</span> Mobile Application
-                                </div>
+                                {/* Placeholder for Browser Mockup Image */}
+                                <div className="mockup-screen-placeholder browser-screen" style={{ backgroundImage: `url(${pgmoveImg})` }}></div>
                             </div>
-                            <a href="https://stayzzy.in" className="product-cta-btn" target="_blank" rel="noopener noreferrer">
-                                Explore Stayzy.in &rarr;
-                            </a>
                         </div>
-                    </div>
 
-                    {/* Card 3: HRMS */}
-                    <div className="premium-product-card reveal">
-                        <div className="product-text-side">
-                            <div className="status-badge coming-soon">
-                                <span className="badge-dot gray"></span> COMING SOON
+                        {/* CARD 2: Stayzy.in (Image on Left) */}
+                        <div className="showcase-card">
+                            <div className="card-media mockup-phone">
+                                {/* Placeholder for Phone Mockup Image */}
+                                <div className="mockup-screen-placeholder phone-screen" style={{ backgroundImage: `url(${stayzyImg})` }}></div>
                             </div>
-                            <h2 className="product-card-title">HRMS</h2>
-                            <span className="product-card-subtitle">ENTERPRISE HUMAN RESOURCE PLATFORM</span>
-                            <p className="product-card-desc">
-                                An intelligent Human Resource Management System designed to simplify workforce operations, recruiting, payroll, and appraisals.
-                            </p>
-                            <div className="product-features-grid">
-                                <div className="feature-bullet">
-                                    <span className="bullet-check">✓</span> Employee Management
+                            <div className="card-content">
+                                <span className="badge live">● LIVE</span>
+                                <h2 className="card-title">Stayzy.in</h2>
+                                <span className="card-subtitle">ADVANCED CO-LIVING MANAGEMENT SYSTEM</span>
+                                <p className="card-description">
+                                    A complete co-living and hostel management platform empowering property owners and residents to handle rent collection, digital lease agreements, and maintenance requests.
+                                </p>
+                                <div className="features-grid">
+                                    <div className="feature-item"><span className="check-icon">✓</span> Tenant Management</div>
+                                    <div className="feature-item"><span className="check-icon">✓</span> Rent Collection</div>
+                                    <div className="feature-item"><span className="check-icon">✓</span> Digital Rental Agreements</div>
+                                    <div className="feature-item"><span className="check-icon">✓</span> Occupancy Management</div>
+                                    <div className="feature-item"><span className="check-icon">✓</span> Maintenance Requests</div>
+                                    <div className="feature-item"><span className="check-icon">✓</span> Mobile Application</div>
                                 </div>
-                                <div className="feature-bullet">
-                                    <span className="bullet-check">✓</span> Recruitment & Onboarding
-                                </div>
-                                <div className="feature-bullet">
-                                    <span className="bullet-check">✓</span> Attendance Tracking
-                                </div>
-                                <div className="feature-bullet">
-                                    <span className="bullet-check">✓</span> Payroll Processing
-                                </div>
-                                <div className="feature-bullet">
-                                    <span className="bullet-check">✓</span> Reports & Analytics
-                                </div>
+                                <a href="https://stayzzy.in/" target="_blank" rel="noopener noreferrer" className="primary-btn" style={{ textDecoration: 'none', display: 'inline-block' }}>Explore Stayzy.in &rarr;</a>
                             </div>
-                            <button className="product-cta-btn" onClick={onHrmsClick}>
-                                Learn More &rarr;
-                            </button>
                         </div>
-                        <div className="product-image-side launching-soon-side">
-                            <div className="dotted-launch-box">
-                                <div className="rocket-icon-circle">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="rocket-svg"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 3 0 3 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-3 0-3"></path></svg>
+
+                        {/* CARD 3: HRMS (Coming Soon box on Right) */}
+                        <div className="showcase-card">
+                            <div className="card-content">
+                                <span className="badge coming-soon">● COMING SOON</span>
+                                <h2 className="card-title">HRMS</h2>
+                                <span className="card-subtitle">ENTERPRISE HUMAN RESOURCE PLATFORM</span>
+                                <p className="card-description">
+                                    An enterprise-grade Human Resource Management System designed to centralize employee records, streamline recruitment, automate payroll, and generate performance analytics.
+                                </p>
+                                <div className="features-grid">
+                                    <div className="feature-item"><span className="check-icon">✓</span> Employee Management</div>
+                                    <div className="feature-item"><span className="check-icon">✓</span> Recruitment & Onboarding</div>
+                                    <div className="feature-item"><span className="check-icon">✓</span> Attendance Tracking</div>
+                                    <div className="feature-item"><span className="check-icon">✓</span> Payroll Processing</div>
+                                    <div className="feature-item"><span className="check-icon">✓</span> Reports & Analytics</div>
+                                    <div className="feature-item"><span className="check-icon">✓</span> Leave & Expense Tracking</div>
                                 </div>
-                                <h4>Launching Soon</h4>
-                                <p>Our enterprise Human Resource Management System is currently in active development. We are engineering a unified corporate dashboard to simplify directory rosters, recruitment funnels, and automated payroll operations.</p>
+                                <button className="primary-btn" onClick={onHrmsClick}>Learn More &rarr;</button>
+                            </div>
+                            <div className="card-media coming-soon-box">
+                                <div className="launching-content">
+                                    <div className="launch-icon-circle">🚀</div>
+                                    <h3>Launching Soon</h3>
+                                    <p>Our enterprise Human Resource Management System is currently in active development. We are engineering a unified corporate dashboard to simplify directory rosters, recruitment funnels, and automated payroll operations.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section >
+
+        </>
     );
 }
