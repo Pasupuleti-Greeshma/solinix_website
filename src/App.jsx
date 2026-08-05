@@ -132,7 +132,7 @@ export default function App() {
                             <i className="fas fa-tools"></i>
                         </div>
 
-                        <h3>Product Under Construction</h3>
+                        <h3>Product Under Development</h3>
 
                         <p>
                             Our Enterprise HRMS platform is currently in active

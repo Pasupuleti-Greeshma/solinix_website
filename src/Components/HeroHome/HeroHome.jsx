@@ -25,10 +25,7 @@ export default function Home() {
                     </h1>
 
                     <p>
-                        Solinix helps startups and enterprises transform ideas into
-                        <br />
-                        powerful digital products with modern technologies and
-                        user-first approach.
+                        Powering your digital shift with modern tech and user-first design.
                     </p>
 
                     <div className="hero-buttons">
@@ -308,7 +305,7 @@ export default function Home() {
                             ))}
                         </div>
                     </div>
-                    <div className="contact-top-cards" style={{ gridTemplateColumns: 'repeat(3, 1fr)', marginBottom: '40px' }}>
+                    <div className="contact-top-cards" style={{ marginBottom: '40px' }}>
                         <div className="info-card">
                             <div className="card-icon-circle">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
@@ -325,7 +322,7 @@ export default function Home() {
                             </div>
                             <div>
                                 <h4>Email Us</h4>
-                                <p>solinix.tech@gmail.com<br />We'll reply within 24 hours</p>
+                                 <p><a href="mailto:solinix.tech@gmail.com" style={{ color: "inherit", textDecoration: "none" }}>solinix.tech@gmail.com</a><br />We'll reply within 24 hours</p>
                             </div>
                         </div>
 
@@ -336,8 +333,8 @@ export default function Home() {
                             <div>
                                 <h4>Follow Us</h4>
                                 <div className="social-icons" style={{ display: "flex", gap: "12px", marginTop: "4px" }}>
-                                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style={{ color: "#523ee8" }}><i className="fab fa-linkedin-in"></i></a>
-                                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={{ color: "#523ee8" }}><i className="fab fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/in/sarath-chandra-30a251391/" target="_blank" rel="noopener noreferrer" style={{ color: "#523ee8" }}><i className="fab fa-linkedin-in"></i></a>
+                                    <a href="https://www.instagram.com/pgmovein?igsh=dGN3MGJ6cjNmMTZs" target="_blank" rel="noopener noreferrer" style={{ color: "#523ee8" }}><i className="fab fa-instagram"></i></a>
                                     <a
                                         href="https://facebook.com"
                                         target="_blank"
