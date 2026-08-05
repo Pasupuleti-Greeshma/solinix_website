@@ -21,7 +21,7 @@ export default function ProductsShowcase({ onHrmsClick }) {
                                 <h2 className="card-title">PGMove.in</h2>
                                 <span className="card-subtitle">SMART PG & RENTAL MANAGEMENT PLATFORM</span>
                                 <p className="card-description">
-                                    A smart platform that connects people with PGs, hostels, and rental accommodations — while helping property owners manage listings and receive quality leads.
+                                    A modern marketplace connecting tenants with verified PGs, hostels, and rental accommodations, while providing property owners with automated listing tools and qualified lead generation.
                                 </p>
                                 <div className="features-grid">
                                     <div className="feature-item"><span className="check-icon">✓</span> Smart Property Search</div>
@@ -29,8 +29,9 @@ export default function ProductsShowcase({ onHrmsClick }) {
                                     <div className="feature-item"><span className="check-icon">✓</span> Lead Management</div>
                                     <div className="feature-item"><span className="check-icon">✓</span> Owner Dashboard</div>
                                     <div className="feature-item"><span className="check-icon">✓</span> Rental Discovery</div>
+                                    <div className="feature-item"><span className="check-icon">✓</span> Instant Booking</div>
                                 </div>
-                                <button className="primary-btn">Visit PGMove.in &rarr;</button>
+                                <a href="https://pgmove.in" target="_blank" rel="noopener noreferrer" className="primary-btn" style={{ textDecoration: 'none', display: 'inline-block' }}>Visit PGMove.in &rarr;</a>
                             </div>
                             <div className="card-media mockup-browser">
                                 <div className="browser-header">
@@ -52,7 +53,7 @@ export default function ProductsShowcase({ onHrmsClick }) {
                                 <h2 className="card-title">Stayzy.in</h2>
                                 <span className="card-subtitle">ADVANCED CO-LIVING MANAGEMENT SYSTEM</span>
                                 <p className="card-description">
-                                    A complete PG and hostel management platform built for property owners and tenants to handle rent, occupancy, and agreements.
+                                    A complete co-living and hostel management platform empowering property owners and residents to handle rent collection, digital lease agreements, and maintenance requests.
                                 </p>
                                 <div className="features-grid">
                                     <div className="feature-item"><span className="check-icon">✓</span> Tenant Management</div>
@@ -62,7 +63,7 @@ export default function ProductsShowcase({ onHrmsClick }) {
                                     <div className="feature-item"><span className="check-icon">✓</span> Maintenance Requests</div>
                                     <div className="feature-item"><span className="check-icon">✓</span> Mobile Application</div>
                                 </div>
-                                <button className="primary-btn">Explore Stayzy.in &rarr;</button>
+                                <a href="https://stayzzy.in/" target="_blank" rel="noopener noreferrer" className="primary-btn" style={{ textDecoration: 'none', display: 'inline-block' }}>Explore Stayzy.in &rarr;</a>
                             </div>
                         </div>
 
@@ -73,7 +74,7 @@ export default function ProductsShowcase({ onHrmsClick }) {
                                 <h2 className="card-title">HRMS</h2>
                                 <span className="card-subtitle">ENTERPRISE HUMAN RESOURCE PLATFORM</span>
                                 <p className="card-description">
-                                    An intelligent Human Resource Management System designed to simplify workforce operations, recruiting, payroll, and appraisals.
+                                    An enterprise-grade Human Resource Management System designed to centralize employee records, streamline recruitment, automate payroll, and generate performance analytics.
                                 </p>
                                 <div className="features-grid">
                                     <div className="feature-item"><span className="check-icon">✓</span> Employee Management</div>
@@ -81,8 +82,9 @@ export default function ProductsShowcase({ onHrmsClick }) {
                                     <div className="feature-item"><span className="check-icon">✓</span> Attendance Tracking</div>
                                     <div className="feature-item"><span className="check-icon">✓</span> Payroll Processing</div>
                                     <div className="feature-item"><span className="check-icon">✓</span> Reports & Analytics</div>
+                                    <div className="feature-item"><span className="check-icon">✓</span> Leave & Expense Tracking</div>
                                 </div>
-                                <button className="primary-btn">Learn More &rarr;</button>
+                                <button className="primary-btn" onClick={onHrmsClick}>Learn More &rarr;</button>
                             </div>
                             <div className="card-media coming-soon-box">
                                 <div className="launching-content">

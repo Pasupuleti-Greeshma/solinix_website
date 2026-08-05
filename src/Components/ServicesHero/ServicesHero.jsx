@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { services } from "../../data/services";
 import { techStack } from "../../data/techStack";
 import { processSteps } from "../../data/processSteps";
@@ -116,7 +117,7 @@ export default function ServicesHero() {
                         </div>
 
                         <div className="cta-right-content">
-                            <a href="/#contact" className="lets-talk-white-btn" style={{ textDecoration: 'none' }}>Let's Talk &rarr;</a>
+                            <Link to="/contact" className="lets-talk-white-btn" style={{ textDecoration: 'none' }}>Let's Talk &rarr;</Link>
 
 
                         </div>

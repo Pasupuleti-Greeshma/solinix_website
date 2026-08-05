@@ -18,9 +18,9 @@ section[id] {
 }
 
 body {
-    color: #ffffff;
+    color: #000000;
     overflow-x: hidden;
-    background-color: rgba(79, 70, 229, 0.15);
+    background-color: #ffffff;
     /* Navy Blue */
     margin: 0;
     padding-top: 70px;
@@ -1412,7 +1412,7 @@ body {
 }
 
 #services.hero-section {
-    background: none !important;
+    background: #ffffff !important;
 }
 
 #services .hero-background {
@@ -2968,11 +2968,11 @@ body {
 
 
 .footer {
-    background-color: rgb(50, 50, 175);
-    color: white;
+    background-color: #ffffff;
+    color: #0f172a;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 50px 40px 20px 40px;
-    border-top: 1px solid rgba(190, 83, 201, 0.3);
+    border-top: 1px solid #e2e8f0;
 }
 
 .footer-container {
@@ -2982,25 +2982,25 @@ body {
     grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr;
     gap: 40px;
     padding-bottom: 40px;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #e2e8f0;
 }
 
 .footer-logo {
     font-size: 24px;
     font-weight: 800;
-    color: white;
+    color: #000000;
     letter-spacing: 2px;
     margin-bottom: 16px;
 }
 
 .footer-logo span {
-    color: rgb(159, 31, 129);
+    color: #4f46e5;
 }
 
 .footer-desc {
     font-size: 14px;
     line-height: 1.6;
-    color: white;
+    color: #475569;
     margin-bottom: 20px;
 }
 
@@ -3011,20 +3011,20 @@ body {
 }
 
 .social-icons a {
-    color: white;
+    color: #0f172a;
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-    color: rgb(79, 70, 229);
+    color: #4f46e5;
 }
 
 .footer-col h3 {
     font-size: 16px;
     font-weight: 600;
-    color: white;
+    color: #0f172a;
     margin-bottom: 20px;
 }
 
@@ -3040,20 +3040,20 @@ body {
 }
 
 .footer-col ul li a {
-    color: white;
+    color: #475569;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-col ul li a:hover {
-    color: white;
+    color: #4f46e5;
 }
 
 .contact-col ul li {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: white;
+    color: #475569;
 }
 
 .footer-bottom {
@@ -3063,7 +3063,7 @@ body {
     justify-content: space-between;
     align-items: center;
     font-size: 13px;
-    color: white;
+    color: #64748b;
 }
 
 .footer-bottom-links {
@@ -3072,13 +3072,13 @@ body {
 }
 
 .footer-bottom-links a {
-    color: white;
+    color: #64748b;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-bottom-links a:hover {
-    color: blueviolet;
+    color: #4f46e5;
 }
 
 @media (max-width: 900px) {
@@ -3181,11 +3181,11 @@ section {
 }
 
 .milestones-section {
-    padding: 15px 20px 72px 20px !important;
+    padding: 15px 20px 20px 20px !important;
 }
 
 .core-services-section {
-    padding: 72px 20px 20px 20px !important;
+    padding: 20px 20px 20px 20px !important;
 }
 
 .tech-process-section {
@@ -4139,7 +4139,7 @@ section:last-of-type {
     align-items: center;
     justify-content: space-between;
     background: #ffffff;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #8b5cff;
     border-radius: 24px;
     padding: 50px;
     gap: 60px;
@@ -4187,11 +4187,11 @@ section:last-of-type {
     margin-bottom: 20px;
 }
 
-.card-description {
+.card-content p.card-description {
     font-size: 16px;
     line-height: 1.6;
-    color: #475569;
-    margin-bottom: 30px;
+    color: #000000 !important;
+    margin-bottom: 35px !important;
 }
 
 .features-grid {

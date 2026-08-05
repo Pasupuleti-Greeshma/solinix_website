@@ -28,29 +28,29 @@ export default function Footer() {
                 <div className="footer-col">
                     <h3>Company</h3>
                     <ul>
-                        <li><a href="/#about">About Us</a></li>
-                        <li><a href="/#services">Services</a></li>
-                        <li><a href="/#products">Products</a></li>
-                        <li><a href="/#contact">Contact</a></li>
+                        <li><Link to="/about">About Us</Link></li>
+                        <li><Link to="/services">Services</Link></li>
+                        <li><Link to="/products">Products</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
                     </ul>
                 </div>
 
                 <div className="footer-col">
                     <h3>Services</h3>
                     <ul>
-                        <li><a href="/#services">Web Development</a></li>
-                        <li><a href="/#services">Mobile Development</a></li>
-                        <li><a href="/#services">AI &amp; Automation</a></li>
-                        <li><a href="/#services">Digital Marketing</a></li>
+                        <li><Link to="/services">Web Development</Link></li>
+                        <li><Link to="/services">Mobile Development</Link></li>
+                        <li><Link to="/services">AI &amp; Automation</Link></li>
+                        <li><Link to="/services">Digital Marketing</Link></li>
                     </ul>
                 </div>
 
                 <div className="footer-col">
                     <h3>Products</h3>
                     <ul>
-                        <li><a href="/#products">Stayzzy</a></li>
-                        <li><a href="/#products">PGMove</a></li>
-                        <li><a href="/#products">HRMS</a></li>
+                        <li><Link to="/products">Stayzzy</Link></li>
+                        <li><Link to="/products">PGMove</Link></li>
+                        <li><Link to="/products">HRMS</Link></li>
                     </ul>
                 </div>
 

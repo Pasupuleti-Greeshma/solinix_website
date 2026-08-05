@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./styles/global.css";
+import ScrollToTop from "./Components/ScrollToTop";
 
 // Layout
 import Navbar from "./Components/Navbar/Navbar";
@@ -23,6 +24,8 @@ export default function App() {
 
     return (
         <div className="solinx-app">
+
+            <ScrollToTop />
 
             {/* Navbar appears on every page */}
             <Navbar onBlogClick={() => setShowBlogModal(true)} />
