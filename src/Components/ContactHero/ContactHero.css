@@ -20,7 +20,7 @@
     /* Replace 'office-conference.jpg' with your office image asset path */
     background-image:
         linear-gradient(to right, #ffffff 0%, rgba(255, 255, 255, 0.85) 25%, rgba(255, 255, 255, 0) 100%),
-        url('office-conference.jpg');
+        url('../../assets/contacts.png');
     background-size: cover;
     background-position: center;
     z-index: 1;

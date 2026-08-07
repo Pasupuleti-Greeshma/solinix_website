@@ -17,7 +17,7 @@
 }
 
 .navbar .logo img {
-    height: 100px;
+    height: 120px;
     padding-top: 4px;
     object-fit: contain;
 }
@@ -102,8 +102,8 @@
     }
 
     .navbar .logo img {
-        height: 50px;
-        padding-top: 8px;
+        height: 80px;
+        padding-top: 4px;
     }
 
     .navbar nav {
@@ -124,9 +124,10 @@
     }
 
     .navbar nav a {
-        padding: 12px 5%;
+        padding: 16px 5%;
         border-bottom: none;
-        font-size: 14px;
+        font-size: 22px;
+        font-weight: 700;
     }
 
     .navbar nav a:hover {
@@ -144,18 +145,18 @@
 
     .navbar .mobile-only-action {
         display: block;
-        padding: 12px 5%;
+        padding: 16px 5%;
         border-top: 1px solid #e5e7eb;
     }
 
     .navbar .mobile-consult-btn {
         background-color: rgb(79, 70, 229);
         color: #ffffff;
-        padding: 10px 20px;
-        border-radius: 6px;
+        padding: 12px 24px;
+        border-radius: 8px;
         text-decoration: none;
-        font-weight: 500;
-        font-size: 14px;
+        font-weight: 700;
+        font-size: 16px;
         transition: background-color 0.3s ease;
         display: block;
         width: 100%;
@@ -174,11 +175,11 @@
     }
 
     .navbar .logo img {
-        height: 40px;
+        height: 70px;
     }
 
     .navbar nav a {
-        font-size: 13px;
-        padding: 10px 5%;
+        font-size: 20px;
+        padding: 12px 5%;
     }
 }
