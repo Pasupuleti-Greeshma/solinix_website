@@ -1,9 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
+import "./PrivacyPolicy.css";
 
 export default function PrivacyPolicy() {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+    // ScrollToTop component handles page scroll reset globally
 
     return (
         <section className="policy-section">

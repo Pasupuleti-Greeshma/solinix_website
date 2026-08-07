@@ -1,5 +1,6 @@
 import React from "react";
 import { useContactForm } from "../../controllers/useContactForm";
+import "./ContactHero.css";
 
 // VIEW: Contact intro section with background image
 export default function ContactHero() {

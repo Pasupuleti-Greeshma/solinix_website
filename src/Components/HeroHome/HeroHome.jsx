@@ -6,6 +6,7 @@ import { milestones } from "../../data/milestones";
 import { services } from "../../data/services";
 import { techStack } from "../../data/techStack";
 import { processSteps } from "../../data/processSteps";
+import "./HeroHome.css";
 
 
 export default function Home() {
@@ -273,7 +274,7 @@ export default function Home() {
                         <div className="tech-stack-container">
                             <span className="tech-stack-title">TECHNOLOGY STACK WE USE</span>
                             <div className="tech-items-row">
-                                {techStack.concat(techStack).map((tech, index) => (
+                                {techStack.map((tech, index) => (
                                     <div className="tech-item" key={`${tech.name}-${index}`}>
                                         <div className="tech-icon-circle">
                                             <img src={tech.icon} alt={tech.name} className="tech-logo" />

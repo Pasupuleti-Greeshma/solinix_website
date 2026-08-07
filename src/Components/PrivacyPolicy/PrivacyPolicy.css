@@ -1,0 +1,151 @@
+/* Policy & Terms Page UI Styles */
+.policy-section {
+    font-family: 'Inter', sans-serif;
+    background-color: #fafafa;
+    padding: 80px 0;
+    min-height: 80vh;
+    color: #334155;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background blob decorations for a premium look */
+.policy-section::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.05) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.policy-section::after {
+    content: '';
+    position: absolute;
+    bottom: -10%;
+    left: -10%;
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, rgba(79, 70, 229, 0.05) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.policy-container {
+    max-width: 850px;
+    width: 90%;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 50px 60px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02), 0 10px 40px rgba(0, 0, 0, 0.03);
+    border: 1px solid #f1f5f9;
+    position: relative;
+    z-index: 2;
+}
+
+.policy-container .sub-heading {
+    color: #4f46e5;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.policy-container .main-heading {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.2;
+    margin: 0 0 10px 0;
+}
+
+.policy-date {
+    font-size: 0.95rem;
+    color: #64748b;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #f1f5f9;
+    padding-bottom: 20px;
+    font-style: italic;
+}
+
+.policy-content {
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.policy-content p {
+    margin-bottom: 20px;
+    color: #475569;
+}
+
+.policy-content h2 {
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-top: 40px;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Bullet list styling matching premium aesthetics */
+.policy-content ul {
+    margin: 20px 0 25px 20px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.policy-content ul li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 12px;
+    color: #475569;
+}
+
+.policy-content ul li::before {
+    content: "â€¢";
+    color: #4f46e5;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -4px;
+    line-height: 1;
+}
+
+.policy-content strong {
+    color: #0f172a;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .policy-section {
+        padding: 40px 0;
+    }
+    
+    .policy-container {
+        padding: 30px 24px;
+        border-radius: 16px;
+    }
+    
+    .policy-container .main-heading {
+        font-size: 2.1rem;
+    }
+    
+    .policy-content h2 {
+        font-size: 1.25rem;
+        margin-top: 30px;
+        margin-bottom: 12px;
+    }
+    
+    .policy-content {
+        font-size: 0.95rem;
+    }
+}

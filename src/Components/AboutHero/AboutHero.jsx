@@ -1,8 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { teamMembers } from "../../data/teamMembers";
 import { focusItems } from "../../data/focusItems";
 import { milestones } from "../../data/milestones";
+import "./AboutHero.css";
 
 // VIEW: About / hero section with background image
 export default function AboutHero() {

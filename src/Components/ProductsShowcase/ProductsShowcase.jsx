@@ -1,4 +1,5 @@
 import React from "react";
+import "./ProductsShowcase.css";
 
 // VIEW: Premium alternating product showcase cards matching the custom layout
 export default function ProductsShowcase({ onHrmsClick }) {

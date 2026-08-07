@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import solinix from "../../assets/solinix.png";
+import "./Navbar.css";
+
 // VIEW: Top navigation bar
 export default function Navbar({ onBlogClick }) {
     const [isOpen, setIsOpen] = useState(false);
